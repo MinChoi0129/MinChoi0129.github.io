@@ -18,7 +18,7 @@ permalink: /
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
 <p><b>M.S. Student in Computer Science &amp; Engineering</b><br/>
-APEX Lab, Gyeongsang National University · Jinju, South Korea</p>
+<a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University · Jinju, South Korea</p>
 
 <a href="https://scholar.google.com/citations?user=Ohcu4AwAAAAJ&hl=ko&authuser=1"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
 <a href="https://orcid.org/0009-0005-2796-3207"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat&logo=orcid&logoColor=white" alt="ORCID"></a>
@@ -29,7 +29,7 @@ APEX Lab, Gyeongsang National University · Jinju, South Korea</p>
 
 ---
 
-I am Minjae Lee, an M.S. student at the APEX Lab, Gyeongsang National University. My research focuses on **4D perception**, aiming to enable computers to comprehend space and time. As part of this journey, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. Guided by the philosophy of **real-world applicability**, my research pursues generalization across heterogeneous sensors, lightweight architectures, and robustness in the wild.
+I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University. My research focuses on **4D perception**, aiming to enable computers to comprehend space and time. As part of this journey, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. Guided by the philosophy of **real-world applicability**, my research pursues generalization across heterogeneous sensors, lightweight architectures, and robustness in the wild.
 
 ## News
 
@@ -40,6 +40,16 @@ I am Minjae Lee, an M.S. student at the APEX Lab, Gyeongsang National University
 - **2025.12** &nbsp;📝&nbsp; **SwiftMOS** accepted to **IEEE Robotics and Automation Letters (RA-L)**.
 - **2025.11** &nbsp;📝&nbsp; Two papers accepted to **AAAI 2026**.
 - **2024.09** &nbsp;📝&nbsp; Three papers accepted to **SIGGRAPH Asia 2024**.
+
+## Honors & Awards
+
+- Excellence Award, Manufacturing AI Competition, Gyeongsang National University, May 2026
+- Young Pioneer Researcher Award, GNU Graduate School, May 2026
+- Excellence Award, Glocal English Speech Contest, GNU Graduate School, May 2025
+- Gyeongsangnam-do Governor's Award (top of the College of IT Engineering), GNU, Feb. 2025
+- Grand Prize, Capstone Design Competition, Gyeongsang National University, Dec. 2024
+- Grand Prize (1st nationwide in elementary AI education), NAVER 1784 School Revolution, Nov. 2023
+- Bronze Prize (3rd nationwide), LikeLion Web Development Hackathon, Aug. 2023
 
 ## Contact
 
