@@ -33,23 +33,18 @@ I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target=
 
 ## News
 
-- **2026.05** &nbsp;🏆&nbsp; Received the Excellence Award, Manufacturing AI Competition (Gyeongsang National University).
-- **2026.05** &nbsp;🏆&nbsp; Received the Young Pioneer Researcher Award, GNU Graduate School.
+- **2026.05** &nbsp;🏆&nbsp; Received the Excellence Award at the Manufacturing AI Competition (Gyeongsang National University).
+- **2026.05** &nbsp;🏆&nbsp; Received the Young Pioneer Researcher Award (GNU Graduate School).
 - **2026.01** &nbsp;📝&nbsp; **X-MOS** and **HBRB-BoW** (LBR) accepted to **ICRA 2026**.
 - **2026.01** &nbsp;📝&nbsp; Early Alzheimer's disease detection paper accepted to **Applied Sciences**.
 - **2025.12** &nbsp;📝&nbsp; **SwiftMOS** accepted to **IEEE Robotics and Automation Letters (RA-L)**.
 - **2025.11** &nbsp;📝&nbsp; Two papers accepted to **AAAI 2026**.
+- **2025.05** &nbsp;🏆&nbsp; Received the Excellence Award at the Glocal English Speech Contest (GNU Graduate School).
+- **2025.02** &nbsp;🏆&nbsp; Received the Gyeongsangnam-do Governor's Award (top of the College of IT Engineering).
+- **2024.12** &nbsp;🏆&nbsp; Won the Grand Prize at the Capstone Design Competition (Gyeongsang National University).
 - **2024.09** &nbsp;📝&nbsp; Three papers accepted to **SIGGRAPH Asia 2024**.
-
-## Honors & Awards
-
-- Excellence Award, Manufacturing AI Competition, Gyeongsang National University, May 2026
-- Young Pioneer Researcher Award, GNU Graduate School, May 2026
-- Excellence Award, Glocal English Speech Contest, GNU Graduate School, May 2025
-- Gyeongsangnam-do Governor's Award (top of the College of IT Engineering), GNU, Feb. 2025
-- Grand Prize, Capstone Design Competition, Gyeongsang National University, Dec. 2024
-- Grand Prize (1st nationwide in elementary AI education), NAVER 1784 School Revolution, Nov. 2023
-- Bronze Prize (3rd nationwide), LikeLion Web Development Hackathon, Aug. 2023
+- **2023.11** &nbsp;🏆&nbsp; Won the Grand Prize (1st nationwide in elementary AI education) at NAVER 1784 School Revolution.
+- **2023.08** &nbsp;🏆&nbsp; Won the Bronze Prize (3rd nationwide) at the LikeLion Web Development Hackathon.
 
 ## Contact
 
