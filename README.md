@@ -30,15 +30,12 @@ APEX Lab, Gyeongsang National University · Jinju, South Korea</p>
 <a href="https://orcid.org/0009-0005-2796-3207"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat&logo=orcid&logoColor=white" alt="ORCID"></a>
 <a href="https://www.linkedin.com/in/minjae-lee-9122bb252/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="https://github.com/MinChoi0129"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
-<a href="./cv.pdf"><img src="https://img.shields.io/badge/CV-555555?style=flat&logo=readthedocs&logoColor=white" alt="CV"></a>
 
 </div>
 
 ---
 
-I am an M.S. student in Computer Science and Engineering at **Gyeongsang National University** in Jinju, South Korea, where I am a member of the **APEX Lab**. My research centers on **LiDAR perception for autonomous driving**, with a particular focus on **Moving Object Segmentation (MOS)**, where I design models that are fast, lightweight, and robust across heterogeneous sensors and real-world driving environments.
-
-Alongside MOS, I am broadly interested in **Visual SLAM** and **place recognition**, and I care about building perception pipelines that are reproducible and hold up outside the benchmark. A full list of my papers is available on the [Publications](./publications.html) page.
+I am Minjae Lee, an M.S. student at the APEX Lab, Gyeongsang National University. My research focuses on **4D perception**, aiming to enable computers to comprehend space and time. As part of this journey, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. Guided by the philosophy of **real-world applicability**, my research pursues generalization across heterogeneous sensors, lightweight architectures, and robustness in the wild.
 
 ## News
 
