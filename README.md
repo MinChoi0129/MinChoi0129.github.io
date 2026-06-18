@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Minjae Lee
+permalink: /
 ---
 <!--
   Personal academic homepage (Home) — Minjae Lee
