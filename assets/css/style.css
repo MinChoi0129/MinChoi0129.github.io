@@ -1,0 +1,120 @@
+/* Minjae Lee — personal homepage styles */
+
+:root {
+  --bg: #f7f6f2;          /* off-white, easy on the eyes */
+  --surface: #fffdfa;     /* slightly lifted surface */
+  --fg: #24292f;
+  --muted: #6b7280;
+  --faint: #9aa0a6;       /* under-review / de-emphasized text */
+  --accent: #2563eb;
+  --border: #e6e3da;
+  --maxw: 820px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Header / nav ---- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 253, 250, 0.85);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 13px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.site-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+}
+.site-title:hover { color: var(--accent); text-decoration: none; }
+
+.site-nav { display: flex; gap: 6px; }
+.site-nav a {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--muted);
+  transition: background-color .15s ease, color .15s ease;
+}
+.site-nav a:hover {
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--accent);
+  text-decoration: none;
+}
+.site-nav a.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ---- Content ---- */
+.content {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 36px 24px 96px;
+}
+.content img[alt="Minjae Lee"] {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.14);
+}
+
+h1 { font-size: 30px; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 {
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin-top: 40px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--border);
+}
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
+
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+
+code {
+  background: #ece9e0;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+/* ---- Under review: greyed so it reads as not-yet-formal ---- */
+.under-review,
+.under-review * {
+  color: var(--faint) !important;
+}
+.under-review em { font-style: italic; }
+
+@media (max-width: 600px) {
+  .header-inner { padding: 11px 16px; }
+  .content { padding: 26px 16px 72px; }
+  .site-title { font-size: 18px; }
+}

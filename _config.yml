@@ -1,0 +1,12 @@
+# GitHub Pages site configuration — Minjae Lee
+title: Minjae Lee
+description: "M.S. Student · APEX Lab, Gyeongsang National University"
+lang: en
+
+# Apply the custom layout to README.md / publications.md even if a page
+# omits explicit front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

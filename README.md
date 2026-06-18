@@ -1,27 +1,20 @@
+---
+layout: default
+title: Minjae Lee
+---
 <!--
   Personal academic homepage (Home) — Minjae Lee
   Repo: MinChoi0129.github.io  (display name: Minjae Lee / 이민재)
-  TODO before publishing:
-    1. Add a profile photo at assets/img/profile.png
-    2. Drop your CV at ./cv.pdf
-  Publications live on a separate page: publications.md  ->  /publications.html
+  Header (name + About/Publications nav) and page styling live in
+  _layouts/default.html and assets/css/style.css.
+  Publications live on a separate page: publications.md -> /publications.html
 -->
-
-<table width="100%">
-<tr>
-<td align="center" width="50%"><b><a href="./">About</a></b></td>
-<td align="center" width="50%"><a href="./publications.html">Publications</a></td>
-</tr>
-</table>
-
----
 
 <div align="center">
 
 <br/>
 
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
-
 
 <p><b>M.S. Student in Computer Science &amp; Engineering</b><br/>
 APEX Lab, Gyeongsang National University · Jinju, South Korea</p>
