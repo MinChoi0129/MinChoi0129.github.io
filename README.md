@@ -41,7 +41,6 @@ I am Minjae Lee, an M.S. student at the APEX Lab, Gyeongsang National University
 
 - **2026.05** &nbsp;🏆&nbsp; Received the Excellence Award, Manufacturing AI Competition (Gyeongsang National University).
 - **2026.05** &nbsp;🏆&nbsp; Received the Young Pioneer Researcher Award, GNU Graduate School.
-- **2026.02** &nbsp;📝&nbsp; Started **LoRa-MOS**, a range-robust LiDAR MOS method (IEEE RA-L, under review).
 - **2026.01** &nbsp;📝&nbsp; **X-MOS** and **HBRB-BoW** (LBR) accepted to **ICRA 2026**.
 - **2026.01** &nbsp;📝&nbsp; Early Alzheimer's disease detection paper accepted to **Applied Sciences**.
 - **2025.12** &nbsp;📝&nbsp; **SwiftMOS** accepted to **IEEE Robotics and Automation Letters (RA-L)**.

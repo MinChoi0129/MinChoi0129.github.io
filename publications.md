@@ -21,6 +21,10 @@
 
 ---
 
+## Under Review
+
+- **Minjae Lee**, et al. LoRa-MOS: Range-Robust LiDAR Moving Object Segmentation. *IEEE RA-L, under review*, 2026.
+
 ## International Journals
 
 - **Minjae Lee**, U. Kim, G. W. Kim, and S. Lee. SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
@@ -36,10 +40,6 @@
 - **Minjae Lee**, J. Bae, U. Kim, S. M. Choi, and S. Lee. Shrunken Reality: Augmenting Real-World Contexts in Real-Time on Realistic Miniature Dioramas. *SIGGRAPH Asia 2024*.
 - J. Bae, **Minjae Lee**, U. Kim, and S. Lee. SLAM-Based Illegal Parking Detection System. *SIGGRAPH Asia 2024*.
 - **Minjae Lee**, J. Bae, S. M. Choi, and S. Lee. Finger-Pointing Interface for Human Gesture Recognition Based on Real-Time Geometric Comprehension. *SIGGRAPH Asia 2024*.
-
-## Preprints / Under Review
-
-- **Minjae Lee**, et al. LoRa-MOS: Range-Robust LiDAR Moving Object Segmentation. *IEEE RA-L, under review*, 2026.
 
 ## Domestic Publications (Korean)
 
