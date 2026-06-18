@@ -4,11 +4,16 @@
   bold = me (Minjae Lee)
 -->
 
+<table width="100%">
+<tr>
+<td align="center" width="50%"><a href="./">About</a></td>
+<td align="center" width="50%"><b><a href="./publications.html">Publications</a></b></td>
+</tr>
+</table>
+
 <div align="center">
 
 <h1>Publications</h1>
-
-<p><a href="./">About</a> &nbsp;·&nbsp; <b><a href="./publications.html">Publications</a></b></p>
 
 <p><sub>First-author: 9 · Co-author: 9 &nbsp;·&nbsp; (<b>bold</b> = me)</sub></p>
 
@@ -32,20 +37,20 @@
 - J. Bae, **Minjae Lee**, U. Kim, and S. Lee. **SLAM-Based Illegal Parking Detection System.** *SIGGRAPH Asia 2024*. [[PDF]](https://paper.apex.i1hwan.com/3681756.3697873.pdf)
 - **Minjae Lee**, J. Bae, S. M. Choi, and S. Lee. **Finger-Pointing Interface for Human Gesture Recognition Based on Real-Time Geometric Comprehension.** *SIGGRAPH Asia 2024*.
 
-## Preprints / Under Review
+## Under Review
 
 - **Minjae Lee**, et al. **LoRa-MOS: Range-Robust LiDAR Moving Object Segmentation.** *IEEE RA-L, under review*, 2026.
 
-## Domestic Publications (Korean)
+## 국내 저널 (Domestic Journals)
 
-**Journals**
 - **이민재**, 배지호, 이수원. **Watch My Wrist: 증강현실 환경에서 카메라 시야를 벗어난 손동작 인식을 위한 손목 근육 움직임 기반 예측.** *한국정보기술학회논문지*, 23(7), 167–170, 2025.
 - **이민재**, 배지호, 최상민, 이수원. **3D LiDAR 환경에서의 동적 객체 탐지 개선을 위한 평면 탐지 및 프로젝션 기반 필터.** *한국정보기술학회논문지*, 22(12), 19–27, 2024.
 
-**Conferences**
-- I. Ha, **Minjae Lee**, S. Lee. **Image-Processing-based Hand-Tremor Compensation Pointing System for Digital Presentation Environments.** *KIIT Fall Conference 2025*.
-- S. Yeon, **Minjae Lee**, S. Lee. **Low-Cost Mixed Reality (MR) System based on 3D Hand Tracking.** *KIIT Fall Conference 2024*.
-- U. Kim, **Minjae Lee**, S. Lee. **Multiplayer System Combining First-Person Mixed Reality and Real-Time Strategy.** *KIIT Fall Conference 2024*.
-- **Minjae Lee**, J. Bae, S. Lee. **Plane-Detection-Filter-based Moving Object Segmentation in 3D LiDAR Environments.** *KIIT Fall Conference 2024*.
-- U. Kim, J. Bae, **Minjae Lee**, S. Lee. **Explainable Facial Beauty Prediction Model.** *KIIT Fall Conference 2023*.
-- J. Bae, **Minjae Lee**, U. Kim, S. Lee. **SLAM-based Illegal Parking Detection System.** *KIIT Fall Conference 2023*.
+## 국내 학회 (Domestic Conferences)
+
+- 하일환, **이민재**, 이수원. **영상처리 기반의 디지털 발표 환경용 손 떨림 보정 포인팅 시스템.** *2025년 한국정보기술학회 추계종합학술대회*.
+- 연수민, **이민재**, 이수원. **3D 손 추적 기반의 저비용 혼합 현실(MR) 시스템.** *2024년 한국정보기술학회 추계종합학술대회*.
+- 김웅식, **이민재**, 이수원. **1인칭 혼합 현실과 실시간 전략이 결합된 멀티플레이 시스템.** *2024년 한국정보기술학회 추계종합학술대회*.
+- **이민재**, 배지호, 이수원. **3D LiDAR 환경에서의 평면 탐지 필터 기반 동적 객체 분할.** *2024년 한국정보기술학회 추계종합학술대회*.
+- 김웅식, 배지호, **이민재**, 이수원. **설명 가능한 얼굴 미모 예측 모델.** *2023년 한국정보기술학회 추계종합학술대회*.
+- 배지호, **이민재**, 김웅식, 이수원. **SLAM 기반 불법 주정차 탐지 시스템.** *2023년 한국정보기술학회 추계종합학술대회*.

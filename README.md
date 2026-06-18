@@ -7,19 +7,21 @@
   Publications live on a separate page: publications.md  ->  /publications.html
 -->
 
-<div align="center">
-
-<b><a href="./">About</a></b> &nbsp;|&nbsp; <a href="./publications.html">Publications</a>
-
-</div>
+<table width="100%">
+<tr>
+<td align="center" width="50%"><b><a href="./">About</a></b></td>
+<td align="center" width="50%"><a href="./publications.html">Publications</a></td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
 
+<br/>
+
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
-<h1>Minjae Lee (이민재)</h1>
 
 <p><b>M.S. Student in Computer Science &amp; Engineering</b><br/>
 APEX Lab, Gyeongsang National University · Jinju, South Korea</p>
@@ -53,5 +55,3 @@ Alongside MOS, I am broadly interested in **Visual SLAM** and **place recognitio
 
 Primary &nbsp; wjdchs0129 [at] gnu [dot] ac [dot] kr<br/>
 Personal &nbsp; leeminjae0129 [at] gmail [dot] com
-
-[Google Scholar](https://scholar.google.com/citations?user=Ohcu4AwAAAAJ&hl=ko&authuser=1) &nbsp;·&nbsp; [ORCID](https://orcid.org/0009-0005-2796-3207) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/minjae-lee-9122bb252/) &nbsp;·&nbsp; [GitHub](https://github.com/MinChoi0129)
