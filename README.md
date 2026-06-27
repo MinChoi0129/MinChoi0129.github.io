@@ -35,18 +35,18 @@ I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target=
 
 ## News
 
-- **2026.05** &nbsp;🏆&nbsp; Received the Excellence Award at the Manufacturing AI Competition (Gyeongsang National University).
-- **2026.05** &nbsp;🏆&nbsp; Received the Young Pioneer Researcher Award (GNU Graduate School).
-- **2026.04** &nbsp;📝&nbsp; **HBRB-BoW** (LBR) accepted to **ICRA 2026**.
-- **2026.01** &nbsp;📝&nbsp; **X-MOS** accepted to **ICRA 2026**.
-- **2026.01** &nbsp;📝&nbsp; Early Alzheimer's disease detection paper accepted to **Applied Sciences**.
-- **2025.12** &nbsp;📝&nbsp; **SwiftMOS** accepted to **IEEE Robotics and Automation Letters (RA-L)**.
-- **2025.05** &nbsp;🏆&nbsp; Received the Excellence Award at the Glocal English Speech Contest (GNU Graduate School).
-- **2025.02** &nbsp;🏆&nbsp; Received the Gyeongsangnam-do Governor's Award (top of the College of IT Engineering).
-- **2024.12** &nbsp;🏆&nbsp; Won the Grand Prize at the Capstone Design Competition (Gyeongsang National University).
+- **2026.05** &nbsp;🏆&nbsp; Excellence Award, Manufacturing AI Competition (GNU).
+- **2026.05** &nbsp;🏆&nbsp; Young Pioneer Researcher Award (GNU).
+- **2026.04** &nbsp;📝&nbsp; One paper accepted to **ICRA 2026** (Late-Breaking Results).
+- **2026.01** &nbsp;📝&nbsp; One paper accepted to **ICRA 2026**.
+- **2026.01** &nbsp;📝&nbsp; One paper accepted to **Applied Sciences**.
+- **2025.12** &nbsp;📝&nbsp; One paper accepted to **IEEE Robotics and Automation Letters (RA-L)**.
+- **2025.05** &nbsp;🏆&nbsp; Excellence Award, Glocal English Speech Contest (GNU).
+- **2025.02** &nbsp;🏆&nbsp; Gyeongsangnam-do Governor's Award (1st in IT College).
+- **2024.12** &nbsp;🏆&nbsp; Grand Prize, Capstone Design Competition (GNU).
 - **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
-- **2023.11** &nbsp;🏆&nbsp; Won the Grand Prize (1st nationwide in elementary AI education) at NAVER 1784 School Revolution.
-- **2023.08** &nbsp;🏆&nbsp; Won the Bronze Prize (3rd nationwide) at the LikeLion Web Development Hackathon.
+- **2023.11** &nbsp;🏆&nbsp; Grand Prize, NAVER 1784 School Revolution (1st nationwide).
+- **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 
 ## Contact
 
