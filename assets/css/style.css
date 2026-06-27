@@ -242,7 +242,7 @@ code {
 #cv-en:checked ~ .cv-bar .cv-dl-en { display: inline-flex; }
 
 /* single page fits its frame exactly (aspect-ratio set inline) */
-.cv-frame { margin: 0; }
+.cv-frame { margin: 0; border-radius: 0; }
 .cv-frame iframe { height: 100%; }
 
 /* ---- Project cards ---- */
