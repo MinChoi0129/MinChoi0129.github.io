@@ -27,7 +27,7 @@ title: Projects
 </span>
 </summary>
 <div class="project-viewer">
-<iframe src="{{ '/assets/pdf/project_1.pdf' | relative_url }}#view=FitH" title="AR &amp; Mixed-Reality Interaction" loading="lazy"></iframe>
+<iframe src="{{ '/assets/pdf/project_1.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="AR &amp; Mixed-Reality Interaction" loading="lazy"></iframe>
 <a class="pdf-open" href="{{ '/assets/pdf/project_1.pdf' | relative_url }}" target="_blank" rel="noopener">Open in a new tab</a>
 </div>
 </details>

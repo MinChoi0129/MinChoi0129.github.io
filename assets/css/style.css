@@ -202,6 +202,49 @@ code {
   margin-top: 14px;
 }
 
+/* ---- CV page: language toggle ---- */
+.cv { position: relative; }
+.cv-radio { position: absolute; width: 0; height: 0; opacity: 0; pointer-events: none; }
+.cv-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.cv-tabs {
+  display: inline-flex;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 4px;
+  gap: 2px;
+}
+.cv-tabs label {
+  padding: 7px 16px;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background-color .15s ease, color .15s ease;
+}
+.cv-tabs label:hover { color: var(--accent); }
+#cv-ko:checked ~ .cv-bar .cv-tabs label[for="cv-ko"],
+#cv-en:checked ~ .cv-bar .cv-tabs label[for="cv-en"] { background: var(--accent); color: #fff; }
+
+/* show one CV (frame + matching download) at a time */
+.frame-en, .cv-dl-en { display: none; }
+#cv-en:checked ~ .frame-ko { display: none; }
+#cv-en:checked ~ .frame-en { display: block; }
+#cv-en:checked ~ .cv-bar .cv-dl-ko { display: none; }
+#cv-en:checked ~ .cv-bar .cv-dl-en { display: inline-flex; }
+
+/* single page fits its frame exactly (aspect-ratio set inline) */
+.cv-frame { margin: 0; }
+.cv-frame iframe { height: 100%; }
+
 /* ---- Project cards ---- */
 .project-list {
   display: flex;
