@@ -31,7 +31,7 @@ permalink: /
 
 ---
 
-I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University. My research focuses on **4D perception**, aiming to enable computers to comprehend space and time. As part of this journey, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. Guided by the philosophy of **real-world applicability**, my research pursues generalization across heterogeneous sensors, lightweight architectures, and robustness in the wild.
+I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments.
 
 ## News
 
