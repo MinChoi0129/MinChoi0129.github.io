@@ -20,9 +20,9 @@ title: Publications
 
 ## Under Review
 
-<div class="under-revision" markdown="1">
+<div class="under-review" markdown="1">
 
-- **Minjae Lee**, et al. LoRa-MOS: Range-Robust LiDAR Moving Object Segmentation. *IEEE RA-L, under revision*, 2026.
+- **Minjae Lee**, et al. LoRa-MOS: Range-Robust LiDAR Moving Object Segmentation. *IEEE RA-L, <span class="rev">under revision</span>*, 2026.
 
 </div>
 

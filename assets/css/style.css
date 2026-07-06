@@ -114,10 +114,9 @@ code {
 }
 .under-review em { font-style: italic; }
 
-/* ---- Under revision: active, saturated (not accepted yet, but progressing) ---- */
-.under-revision,
-.under-revision * { color: var(--revision) !important; }
-.under-revision em { font-style: italic; }
+/* ---- "under revision" status tag: active amber, even inside a grey list ---- */
+.under-review .rev,
+.rev { color: var(--revision) !important; font-weight: 600; }
 
 /* ---- Social link buttons (modern pill) ---- */
 .social-links {
