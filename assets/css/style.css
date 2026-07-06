@@ -14,6 +14,9 @@
 
 * { box-sizing: border-box; }
 
+/* Always reserve the scrollbar gutter so short pages (e.g. Projects)
+   don't shift the centered layout relative to tall, scrolling pages. */
+html { scrollbar-gutter: stable; overflow-y: scroll; }
 html, body { margin: 0; padding: 0; }
 
 body {
