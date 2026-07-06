@@ -6,6 +6,7 @@
   --fg: #24292f;
   --muted: #6b7280;
   --faint: #9aa0a6;       /* under-review / de-emphasized text */
+  --revision: #b45309;    /* under-revision / active status */
   --accent: #2563eb;
   --border: #e6e3da;
   --maxw: 820px;
@@ -112,6 +113,11 @@ code {
   color: var(--faint) !important;
 }
 .under-review em { font-style: italic; }
+
+/* ---- Under revision: active, saturated (not accepted yet, but progressing) ---- */
+.under-revision,
+.under-revision * { color: var(--revision) !important; }
+.under-revision em { font-style: italic; }
 
 /* ---- Social link buttons (modern pill) ---- */
 .social-links {
