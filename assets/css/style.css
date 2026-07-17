@@ -83,13 +83,18 @@ a:hover { text-decoration: underline; }
 html[data-lang="en"] .lang-ko { display: none !important; }
 html[data-lang="ko"] .lang-en { display: none !important; }
 
-.header-right { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+/* Pinned to the browser's top-right corner, above the sticky header. */
 .lang-toggle {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  z-index: 60;
   display: inline-flex;
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
 }
 .lang-opt {
   appearance: none;
@@ -101,13 +106,18 @@ html[data-lang="ko"] .lang-en { display: none !important; }
   font-size: 13px;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--muted);
+  color: #9aa0a6;                 /* not selected: muted grey */
   cursor: pointer;
   transition: background-color .15s ease, color .15s ease;
 }
-.lang-opt:hover { color: var(--accent); }
+.lang-opt:hover { color: var(--fg); background: rgba(0, 0, 0, 0.04); }
 html[data-lang="en"] .lang-opt[data-set-lang="en"],
-html[data-lang="ko"] .lang-opt[data-set-lang="ko"] { background: var(--accent); color: #fff; }
+html[data-lang="ko"] .lang-opt[data-set-lang="ko"] { background: #e7e4dc; color: #24292f; }  /* selected: grey fill */
+
+/* Reserve space so the fixed toggle never overlaps the nav on narrower viewports */
+@media (max-width: 1040px) {
+  .header-inner { padding-right: 84px; }
+}
 
 /* CV page: single download button aligns right (language decides which shows) */
 .cv-bar { justify-content: flex-end; }

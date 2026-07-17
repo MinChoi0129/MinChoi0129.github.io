@@ -15,21 +15,20 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button type="button" class="lang-opt" data-set-lang="en">EN</button>
+    <button type="button" class="lang-opt" data-set-lang="ko">한</button>
+  </div>
+
   <header class="site-header">
     <div class="header-inner">
       <a class="site-title" href="{{ '/' | relative_url }}"><span class="lang-en">Minjae Lee</span><span class="lang-ko">이민재</span></a>
-      <div class="header-right">
-        <nav class="site-nav">
-          <a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}><span class="lang-en">About</span><span class="lang-ko">소개</span></a>
-          <a href="{{ '/publications.html' | relative_url }}"{% if page.url contains 'publications' %} class="active"{% endif %}><span class="lang-en">Publications</span><span class="lang-ko">논문</span></a>
-          <a href="{{ '/projects.html' | relative_url }}"{% if page.url contains 'projects' %} class="active"{% endif %}><span class="lang-en">Projects</span><span class="lang-ko">프로젝트</span></a>
-          <a href="{{ '/cv.html' | relative_url }}"{% if page.url contains 'cv' %} class="active"{% endif %}>CV</a>
-        </nav>
-        <div class="lang-toggle" role="group" aria-label="Language">
-          <button type="button" class="lang-opt" data-set-lang="en">EN</button>
-          <button type="button" class="lang-opt" data-set-lang="ko">한</button>
-        </div>
-      </div>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}><span class="lang-en">About</span><span class="lang-ko">소개</span></a>
+        <a href="{{ '/publications.html' | relative_url }}"{% if page.url contains 'publications' %} class="active"{% endif %}><span class="lang-en">Publications</span><span class="lang-ko">논문</span></a>
+        <a href="{{ '/projects.html' | relative_url }}"{% if page.url contains 'projects' %} class="active"{% endif %}><span class="lang-en">Projects</span><span class="lang-ko">프로젝트</span></a>
+        <a href="{{ '/cv.html' | relative_url }}"{% if page.url contains 'cv' %} class="active"{% endif %}>CV</a>
+      </nav>
     </div>
   </header>
 
