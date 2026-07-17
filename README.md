@@ -15,7 +15,7 @@ permalink: /
 
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
-<p><b><span class="lang-en">M.S. in Computer Science &amp; Engineering (Expected August 2026)</span><span class="lang-ko">컴퓨터공학 석사과정 (2026년 8월 졸업 예정)</span></b><br/>
+<p><b><span class="lang-en">M.S. in Computer Science &amp; Engineering (Expected August 2026)</span><span class="lang-ko">컴퓨터공학 석사 (2026년 8월 졸업 예정)</span></b><br/>
 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, <span class="lang-en">Gyeongsang National University · Jinju, South Korea</span><span class="lang-ko">경상국립대학교 · 대한민국 진주</span></p>
 
 <p class="social-links">
@@ -30,10 +30,10 @@ permalink: /
 ---
 
 <div class="lang-en" markdown="1">
-I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **world models**.
+I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University, graduating in August 2026. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **world models**.
 </div>
 <div class="lang-ko" markdown="1">
-저는 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>의 석사과정 이민재입니다. 컴퓨터가 공간과 시간을 이해하도록 하는 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <strong>LiDAR 이동 객체 분할(MOS)</strong>을 다루며, <strong>실세계 적용성(real-world applicability)</strong>을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>월드 모델(world model)</strong>도 탐구하고 있습니다.
+저는 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> 소속 이민재이며, 2026년 8월 컴퓨터공학 석사 졸업을 앞두고 있습니다. 컴퓨터가 공간과 시간을 이해하도록 하는 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <strong>LiDAR 이동 객체 분할(MOS)</strong>을 다루며, <strong>실세계 적용성(real-world applicability)</strong>을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>월드 모델(world model)</strong>도 탐구하고 있습니다.
 </div>
 
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
