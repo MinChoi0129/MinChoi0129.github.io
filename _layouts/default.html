@@ -23,5 +23,21 @@
   <main class="content">
     {{ content }}
   </main>
+
+  <script>
+    // Assemble email buttons at runtime so the raw address never sits in
+    // the static HTML (light anti-harvesting). No-JS visitors still see the
+    // obfuscated "[at] / [dot]" fallback text.
+    (function () {
+      var btns = document.querySelectorAll('.email-btn[data-user]');
+      for (var i = 0; i < btns.length; i++) {
+        var el = btns[i];
+        var addr = el.getAttribute('data-user') + '@' + el.getAttribute('data-domain');
+        el.setAttribute('href', 'mailto:' + addr);
+        var out = el.querySelector('.addr');
+        if (out) out.textContent = addr;
+      }
+    })();
+  </script>
 </body>
 </html>
