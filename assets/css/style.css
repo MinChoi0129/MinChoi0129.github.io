@@ -589,6 +589,31 @@ code {
   font-size: 14px;
 }
 
+/* Rich project body (text, images, video) revealed when a card opens */
+.project-body {
+  border-top: 1px solid var(--border);
+  background: #fffdfa;
+  padding: 20px;
+}
+
+.project-body > :first-child {
+  margin-top: 0;
+}
+
+.project-body > :last-child {
+  margin-bottom: 0;
+}
+
+.project-body img,
+.project-body video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin: 16px 0;
+}
+
 /* ---- Under-maintenance notice ---- */
 .maintenance {
   max-width: 520px;

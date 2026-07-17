@@ -10,6 +10,11 @@ defaults:
     values:
       layout: default
 
+# Each file in _projects/ is one project card on the Projects page.
+collections:
+  projects:
+    output: false
+
 # CV LaTeX sources are kept for version control but not served.
 exclude:
   - cv-src
