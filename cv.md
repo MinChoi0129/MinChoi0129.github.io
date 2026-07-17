@@ -4,8 +4,9 @@ title: CV
 ---
 <!--
   CV page. The PDF shown follows the site language switch:
-  English site -> cv_eng.pdf, Korean site -> cv.pdf. Page 1 only,
+  English site -> cv-en.pdf, Korean site -> cv-ko.pdf. Page 1 only,
   viewer chrome hidden via #toolbar=0&navpanes=0.
+  Source LaTeX lives in /cv-src (en/, ko/); build it with pdflatex.
 -->
 
 <div align="center">
@@ -15,13 +16,13 @@ title: CV
 </div>
 
 <div class="cv-bar">
-<a class="btn-download lang-en" href="{{ '/assets/pdf/cv_eng.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
-<a class="btn-download lang-ko" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">PDF 다운로드</a>
+<a class="btn-download lang-en" href="{{ '/assets/pdf/cv-en.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+<a class="btn-download lang-ko" href="{{ '/assets/pdf/cv-ko.pdf' | relative_url }}" target="_blank" rel="noopener">PDF 다운로드</a>
 </div>
 
 <div class="pdf-frame cv-frame lang-en" style="aspect-ratio: 612 / 792;">
-<iframe src="{{ '/assets/pdf/cv_eng.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Curriculum Vitae (English)"></iframe>
+<iframe src="{{ '/assets/pdf/cv-en.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Curriculum Vitae (English)"></iframe>
 </div>
 <div class="pdf-frame cv-frame lang-ko" style="aspect-ratio: 612 / 792;">
-<iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="이력서 (한국어)"></iframe>
+<iframe src="{{ '/assets/pdf/cv-ko.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="이력서 (한국어)"></iframe>
 </div>
