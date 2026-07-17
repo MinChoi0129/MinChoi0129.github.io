@@ -54,6 +54,14 @@
           try { localStorage.setItem('site-lang', l); } catch (e) {}
         });
       }
+      // Keep the toggle's gap below the header equal to its gap from the right edge.
+      var header = document.querySelector('.site-header');
+      function syncHeaderHeight() {
+        if (header) root.style.setProperty('--header-h', header.offsetHeight + 'px');
+      }
+      syncHeaderHeight();
+      window.addEventListener('resize', syncHeaderHeight);
+      window.addEventListener('load', syncHeaderHeight);
     })();
   </script>
 </body>
