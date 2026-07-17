@@ -86,7 +86,7 @@ html[data-lang="ko"] .lang-en { display: none !important; }
 /* Fixed to the browser's right edge, just below the header; stays visible on scroll. */
 .lang-toggle {
   position: fixed;
-  top: 58px;
+  top: 68px;
   right: 12px;
   z-index: 30;
   display: inline-flex;
@@ -112,7 +112,7 @@ html[data-lang="ko"] .lang-en { display: none !important; }
 }
 .lang-opt:hover { color: var(--fg); background: rgba(0, 0, 0, 0.04); }
 html[data-lang="en"] .lang-opt[data-set-lang="en"],
-html[data-lang="ko"] .lang-opt[data-set-lang="ko"] { background: #e7e4dc; color: #24292f; }  /* selected: grey fill */
+html[data-lang="ko"] .lang-opt[data-set-lang="ko"] { background: #A6CE39; color: #24292f; }  /* selected: ORCID green */
 
 /* CV page: single download button aligns right (language decides which shows) */
 .cv-bar { justify-content: flex-end; }

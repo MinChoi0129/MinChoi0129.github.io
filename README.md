@@ -30,10 +30,10 @@ permalink: /
 ---
 
 <div class="lang-en" markdown="1">
-I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University, graduating in August 2026. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **world models**.
+I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University, graduating in August 2026. I dream of bringing the technologies imagined in science-fiction films like Iron Man and the Avengers to life. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **World Models**.
 </div>
 <div class="lang-ko" markdown="1">
-저는 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> 소속 이민재이며, 2026년 8월 컴퓨터공학 석사 졸업을 앞두고 있습니다. 컴퓨터가 공간과 시간을 이해하도록 하는 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <strong>LiDAR 이동 객체 분할(MOS)</strong>을 다루며, <strong>실세계 적용성(real-world applicability)</strong>을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>월드 모델(world model)</strong>도 탐구하고 있습니다.
+저는 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> 소속 이민재이며, 2026년 8월 컴퓨터공학 석사 졸업을 앞두고 있습니다. 아이언맨, 어벤져스 같은 SF 영화 속 기술이 현실이 되기를 꿈꿉니다. 컴퓨터가 공간과 시간을 이해하도록 하는 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <strong>LiDAR 이동 객체 분할(MOS)</strong>을 다루며, <strong>실세계 적용성(real-world applicability)</strong>을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>월드 모델(World Model)</strong>도 탐구하고 있습니다.
 </div>
 
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
