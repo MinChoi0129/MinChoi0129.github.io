@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Sourabh Bajaj
+% Adaptation : Hyunggi Chang
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{kotex} % Enable Korean!
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSummary}[1]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeEmployment}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProject}[3]{
+  \item\small{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2
+    \end{tabular*}#3\vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeResearch}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} {\small #4 \vspace{-2pt}} & {\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeTalk}[2]{
+  \vspace{-1pt}\item\small{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+  }
+}
+
+\newcommand{\resumeSkills}[1]{
+  \item\small{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}\vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeCommunity}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\gold}{★}
+\newcommand{\bronze}{★}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeEmploymentListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeEmploymentListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large 이민재 (Minjae Lee)}} & Email : \href{mailto:leeminjae0129@gmail.com}{leeminjae0129@gmail.com} \\
+  {} & Mobile : (+82) 10-7440-1538 \\
+  {} & \href{https://scholar.google.com/citations?user=Ohcu4AwAAAAJ}{\textcolor{blue}{Scholar}} $|$ \href{https://orcid.org/0009-0005-2796-3207}{\textcolor{blue}{ORCID}} $|$ \href{https://www.linkedin.com/in/minjae-lee-9122bb252/}{\textcolor{blue}{LinkedIn}} $|$ \href{https://github.com/MinChoi0129}{\textcolor{blue}{GitHub}}
+\end{tabular*}
+
+%-----------Skills-----------------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSkills{\textbf{Programming}: Python ($\geq$3.8), C++ ($\geq$17), C\#, JavaScript}
+\resumeSkills{\textbf{Framework \& Library}: PyTorch, OpenCV, NumPy, Rerun, Open3D}
+\resumeSkills{\textbf{CV / Robotics}: LiDAR Segmentation, Visual SLAM, 카메라 캘리브레이션, 센서 모델 이해}
+\resumeSkills{\textbf{Mathematical Foundations}: 리 군 \& 리 대수, 선형대수, 확률적 모델링}
+\resumeSkills{\textbf{Deep Learning}: 2D/3D Computer Vision, LLM, 모델 학습 기법}
+\resumeSkills{\textbf{Infrastructure \& Tools}: NVIDIA Jetson Device, Multi-GPU Linux 서버 구축, Docker, Git/GitHub}
+\resumeSubHeadingListEnd
+
+%-----------Projects-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSkills{LoRa-MOS: 거리 강건성을 갖춘 LiDAR 동적 객체 분할 (IEEE RA-L, under revision) & Feb. 2026 -- Present}
+\resumeSkills{X-MOS: 이종 LiDAR 센서 간 일반화 프레임워크 (ICRA 2026) & Aug. 2025 -- Jan. 2026}
+\resumeSkills{SwiftMOS: LiDAR 기반 실시간 동적 객체 분할 (IEEE RA-L) & Jan. 2025 -- Jan. 2026}
+\resumeSkills{J.A.R.V.I.S: LiDAR 스캔 기반 디지털 트윈 \& 제스처 인터랙션 & Sep. 2024 -- Dec. 2024}
+\resumeSkills{손가락 지시 기반 소형 로봇 조작 (SIGGRAPH Asia 2024) & Mar. 2024 -- Dec. 2024}
+\resumeSkills{{\footnotesize Shrunken Reality: SLAM 기반 실시간 현실세계 Context 증강 (SIGGRAPH Asia)} & Jan. 2024 -- Dec. 2024}
+\resumeSkills{SLAM 기반 불법 주정차 탐지 시스템 (SIGGRAPH Asia 2024) & Aug. 2023 -- Dec. 2024}
+\resumeSkills{저비용 증강현실 인터랙션 (한국전자통신연구원, ETRI) & Jan. 2023 -- Dec. 2023}
+\resumeSubHeadingListEnd
+
+%-----------Languages-----------------
+\section{Languages}
+\resumeSubHeadingListStart
+\resumeSkills{\textbf{Korean}: 네이티브}
+\resumeSkills{\textbf{English}: 일상회화 / 국제학술대회 질의응답 가능 / 영어 스피치 대회 수상}
+\resumeSubHeadingListEnd
+
+%-----------Honors & Awards-----------------
+\section{Honors \& Awards}
+\resumeSubHeadingListStart
+\resumeSkills{\textbf{제조 AI 경진대회} -- 경상국립대학교 (\textbf{우수상}) & May 2026}
+\resumeSkills{\textbf{젊은 개척 연구자상} -- 경상국립대학교 대학원 (\textbf{우수상}) & May 2026}
+\resumeSkills{\textbf{글로컬 영어 스피치 대회} -- 경상국립대학교 대학원 (\textbf{우수상}) & May 2025}
+\resumeSkills{\textbf{경상남도도지사 포상} -- IT공과대학 학위수여식 (\textbf{단과대학 1위}) & Feb. 2025}
+\resumeSkills{\textbf{캡스톤디자인 경진대회} -- 경상국립대학교 (\textbf{최우수상}) & Dec. 2024}
+\resumeSkills{\textbf{네이버 1784 스쿨혁명} -- 초등학교 AI 교육 전국 1등 (\textbf{대상}) & Nov. 2023}
+\resumeSkills{\textbf{멋쟁이사자처럼 해커톤} -- 웹 개발 해커톤 전국 3등 (\textbf{동상}) & Aug. 2023}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{경상국립대학교 대학원}{경남 진주시, 대한민국}
+{M.S. in Computer Science and Engineering (졸업 예정) (GPA: 4.5/4.5)}{Mar. 2025 -- Present}
+\resumeSubheading
+{경상국립대학교}{경남 진주시, 대한민국}
+{B.S. in Computer Science (GPA: 4.32/4.5)}{Mar. 2020 -- Feb. 2025}
+\resumeSubHeadingListEnd
+
+%-----------Publications-----------------
+\section{Publications}
+\small 1저자: 9편, 공저자: 9편
+
+\vspace{4pt}
+\textbf{[International Journals]}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{Lee, M.}, Kim, U., Kim, G. W., \& Lee, S. (2026). SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation. \textit{IEEE Robotics and Automation Letters}.}
+\resumeItem{\textbf{Lee, M.}, Lee, S., \& Seo, H. (2026). Enhancing Early Alzheimer's Disease Detection via Transfer Learning: From Big Structural MRI Datasets to Ethnically Distinct Small Cohorts. \textit{Applied Sciences}, 16(2), 1004.}
+\resumeItem{Yeon, S., \textbf{Lee, M.}, Bae, J., \& Lee, S. (2026). Resolving Ambiguity in Pointing Gestures Using Contextual Reasoning from Large Language Models. \textit{Computer Modeling in Engineering \& Sciences}.}
+\resumeSubHeadingListEnd
+
+\textbf{[International Conferences]}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{Lee, M.}, Ha, I., Choi, S. M., Kim, G. W., \& Lee, S. X-MOS: A Heterogeneous Cross-LiDAR Generalization Framework for Moving Object Segmentation. \textit{IEEE International Conference on Robotics and Automation (ICRA) 2026}.}
+\resumeItem{\textbf{Lee, M.}, Choi, S. M., Kim, G. W., \& Lee, S. HBRB-BoW: A Retrained Bag-of-Words Vocabulary for ORB-SLAM via Hierarchical BRB-KMeans. \textit{IEEE International Conference on Robotics and Automation (ICRA) 2026} (Late-Breaking Results).}
+\resumeItem{Kang, W., Kim, M., \textbf{Lee, M.}, Kim, U., Bae, J., Lee, S., Kim, G. W., \& Choi, S. M. Hierarchical Interests Modeling on Multiple Time Scales for Sequential Recommendation. \textit{Artificial Intelligence with Biased or Scarce Data Workshop at AAAI 2026}.}
+\resumeItem{Kim, U., \textbf{Lee, M.}, Bae, J., Kim, M., Choi, S. M., \& Lee, S. Privacy-Preserving Argumentative Explanations. \textit{AAAI 2026}.}
+\resumeItem{\textbf{Lee, M.}, Bae, J., Kim, U., Choi, S. M., \& Lee, S. Shrunken Reality: Augmenting Real-World Contexts in Real-Time on Realistic Miniature Dioramas. \textit{SIGGRAPH Asia 2024}.}
+\resumeItem{Bae, J., \textbf{Lee, M.}, Kim, U., \& Lee, S. SLAM-Based Illegal Parking Detection System. \textit{SIGGRAPH Asia 2024}.}
+\resumeItem{\textbf{Lee, M.}, Bae, J., Choi, S. M., \& Lee, S. Finger-Pointing Interface for Human Gesture Recognition Based on Real-Time Geometric Comprehension. \textit{SIGGRAPH Asia 2024}.}
+\resumeSubHeadingListEnd
+
+\textbf{[Domestic Journals]}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{이민재}, 배지호, \& 이수원. (2025). Watch My Wrist: 증강현실 환경에서 카메라 시야를 벗어난 손동작 인식을 위한 손목 근육 움직임 기반 예측. \textit{한국정보기술학회논문지}, 23(7), 167--170.}
+\resumeItem{\textbf{이민재}, 배지호, 최상민, \& 이수원. (2024). 3D LiDAR 환경에서의 동적 객체 탐지 개선을 위한 평면 탐지 및 프로젝션 기반 필터. \textit{한국정보기술학회논문지}, 22(12), 19--27.}
+\resumeSubHeadingListEnd
+
+\textbf{[Domestic Conferences]}
+\resumeSubHeadingListStart
+\resumeItem{하일환, \textbf{이민재}, \& 이수원. 영상처리 기반의 디지털 발표 환경용 손 떨림 보정 포인팅 시스템. \textit{2025년 한국정보기술학회 추계종합학술대회}.}
+\resumeItem{연수민, \textbf{이민재}, \& 이수원. 3D 손 추적 기반의 저비용 혼합 현실(MR) 시스템. \textit{2024년 한국정보기술학회 추계종합학술대회}.}
+\resumeItem{김웅식, \textbf{이민재}, \& 이수원. 1인칭 혼합 현실과 실시간 전략이 결합된 멀티플레이 시스템. \textit{2024년 한국정보기술학회 추계종합학술대회}.}
+\resumeItem{\textbf{이민재}, 배지호, \& 이수원. 3D LiDAR 환경에서의 평면 탐지 필터 기반 동적 객체 분할. \textit{2024년 한국정보기술학회 추계종합학술대회}.}
+\resumeItem{김웅식, 배지호, \textbf{이민재}, \& 이수원. 설명 가능한 얼굴 미모 예측 모델. \textit{2023년 한국정보기술학회 추계종합학술대회}.}
+\resumeItem{배지호, \textbf{이민재}, 김웅식, \& 이수원. SLAM 기반 불법 주정차 탐지 시스템. \textit{2023년 한국정보기술학회 추계종합학술대회}.}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
