@@ -651,6 +651,19 @@ code {
   display: block;
 }
 
+/* Wide screens: move the sidebar into the left gutter so the reading pane is
+   centered under the page title (not centered within sidebar + pane). */
+@media (min-width: 1280px) {
+  .projects.reading {
+    margin-left: -244px;
+    width: calc(100% + 244px);
+  }
+
+  .projects.reading .p-sidebar {
+    width: 220px;
+  }
+}
+
 /* ---- Under-maintenance notice ---- */
 .maintenance {
   max-width: 520px;
