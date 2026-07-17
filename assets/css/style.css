@@ -83,20 +83,18 @@ a:hover { text-decoration: underline; }
 html[data-lang="en"] .lang-ko { display: none !important; }
 html[data-lang="ko"] .lang-en { display: none !important; }
 
-/* Sits on its own row just below the header, aligned to the right. */
-.lang-bar {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 12px 24px 0;
-  display: flex;
-  justify-content: flex-end;
-}
+/* Fixed to the browser's right edge, just below the header; stays visible on scroll. */
 .lang-toggle {
+  position: fixed;
+  top: 58px;
+  right: 12px;
+  z-index: 30;
   display: inline-flex;
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
 }
 .lang-opt {
   appearance: none;
