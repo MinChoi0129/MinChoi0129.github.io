@@ -5,10 +5,8 @@ permalink: /
 ---
 <!--
   Personal academic homepage (Home) — Minjae Lee
-  Repo: MinChoi0129.github.io  (display name: Minjae Lee / 이민재)
-  Header (name + About/Publications nav) and page styling live in
-  _layouts/default.html and assets/css/style.css.
-  Publications live on a separate page: publications.md -> /publications.html
+  Bilingual: paired .lang-en / .lang-ko blocks toggled by the header switch.
+  Header/nav/toggle and styling live in _layouts/default.html and assets/css/style.css.
 -->
 
 <div align="center">
@@ -17,8 +15,8 @@ permalink: /
 
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
-<p><b>M.S. Student in Computer Science &amp; Engineering</b><br/>
-<a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University · Jinju, South Korea</p>
+<p><b><span class="lang-en">M.S. in Computer Science &amp; Engineering (Expected August 2026)</span><span class="lang-ko">컴퓨터공학 석사과정 (2026년 8월 졸업 예정)</span></b><br/>
+<a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, <span class="lang-en">Gyeongsang National University · Jinju, South Korea</span><span class="lang-ko">경상국립대학교 · 대한민국 진주</span></p>
 
 <p class="social-links">
 <a class="social-btn scholar" href="https://scholar.google.com/citations?user=Ohcu4AwAAAAJ&amp;hl=ko&amp;authuser=1" target="_blank" rel="noopener" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg><span>Scholar</span></a>
@@ -31,10 +29,16 @@ permalink: /
 
 ---
 
-I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments.
+<div class="lang-en" markdown="1">
+I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **world models**.
+</div>
+<div class="lang-ko" markdown="1">
+저는 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>의 석사과정 이민재입니다. 컴퓨터가 공간과 시간을 이해하도록 하는 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <strong>LiDAR 이동 객체 분할(MOS)</strong>을 다루며, <strong>실세계 적용성(real-world applicability)</strong>을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>월드 모델(world model)</strong>도 탐구하고 있습니다.
+</div>
 
-## News
+## <span class="lang-en">News</span><span class="lang-ko">소식</span>
 
+<div class="lang-en" markdown="1">
 - **2026.05** &nbsp;🏆&nbsp; Excellence Award, Manufacturing AI Competition (GNU).
 - **2026.05** &nbsp;🏆&nbsp; Young Pioneer Researcher Award (GNU).
 - **2026.04** &nbsp;📝&nbsp; One paper accepted to **ICRA 2026** (Late-Breaking Results).
@@ -47,10 +51,25 @@ I am Minjae Lee, an M.S. student at the <a href="https://apex.gnu.ac.kr" target=
 - **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
 - **2023.11** &nbsp;🏆&nbsp; Grand Prize, NAVER 1784 School Revolution (1st nationwide).
 - **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
+</div>
+<div class="lang-ko" markdown="1">
+- **2026.05** &nbsp;🏆&nbsp; 제조 AI 경진대회 우수상 (경상국립대).
+- **2026.05** &nbsp;🏆&nbsp; 젊은 개척 연구자상 (경상국립대).
+- **2026.04** &nbsp;📝&nbsp; <strong>ICRA 2026</strong> (Late-Breaking Results)에 논문 1편 게재 확정.
+- **2026.01** &nbsp;📝&nbsp; <strong>ICRA 2026</strong>에 논문 1편 게재 확정.
+- **2026.01** &nbsp;📝&nbsp; <strong>Applied Sciences</strong>에 논문 1편 게재 확정.
+- **2025.12** &nbsp;📝&nbsp; <strong>IEEE Robotics and Automation Letters (RA-L)</strong>에 논문 1편 게재 확정.
+- **2025.05** &nbsp;🏆&nbsp; 글로컬 영어 스피치 대회 우수상 (경상국립대).
+- **2025.02** &nbsp;🏆&nbsp; 경상남도지사상 (IT공과대학 수석).
+- **2024.12** &nbsp;🏆&nbsp; 캡스톤디자인 경진대회 최우수상 (경상국립대).
+- **2024.09** &nbsp;📝&nbsp; <strong>SIGGRAPH Asia 2024</strong>에 논문 2편 게재 확정.
+- **2023.11** &nbsp;🏆&nbsp; 네이버 1784 스쿨혁명 대상 (전국 1위).
+- **2023.08** &nbsp;🏆&nbsp; 멋쟁이사자처럼 해커톤 동상 (전국 3위).
+</div>
 
-## Contact
+## <span class="lang-en">Contact</span><span class="lang-ko">연락처</span>
 
 <p class="contact-links">
-<a class="email-btn" data-user="wjdchs0129" data-domain="gnu.ac.kr" aria-label="Email Minjae Lee (primary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><strong>Primary</strong> <span class="addr">wjdchs0129 [at] gnu [dot] ac [dot] kr</span></span></a>
-<a class="email-btn" data-user="leeminjae0129" data-domain="gmail.com" aria-label="Email Minjae Lee (personal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><strong>Personal</strong> <span class="addr">leeminjae0129 [at] gmail [dot] com</span></span></a>
+<a class="email-btn" data-user="wjdchs0129" data-domain="gnu.ac.kr" aria-label="Email Minjae Lee (primary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><strong><span class="lang-en">Primary</span><span class="lang-ko">대표</span></strong> <span class="addr">wjdchs0129 [at] gnu [dot] ac [dot] kr</span></span></a>
+<a class="email-btn" data-user="leeminjae0129" data-domain="gmail.com" aria-label="Email Minjae Lee (personal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><strong><span class="lang-en">Personal</span><span class="lang-ko">개인</span></strong> <span class="addr">leeminjae0129 [at] gmail [dot] com</span></span></a>
 </p>

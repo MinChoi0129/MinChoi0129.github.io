@@ -3,20 +3,19 @@ layout: default
 title: Projects
 ---
 <!--
-  Projects page — temporarily under maintenance.
-  The PDF preview is intentionally hidden for now. The project-card
-  template is preserved at the bottom of this file; restore it when ready.
+  Projects page — temporarily under maintenance (PDF preview hidden).
+  The project-card template is preserved at the bottom for later restore.
 -->
 
 <div align="center">
 
-<h1>Projects</h1>
+<h1><span class="lang-en">Projects</span><span class="lang-ko">프로젝트</span></h1>
 
 </div>
 
 <div class="maintenance">
-<p class="maintenance-title">Under Maintenance</p>
-<p class="maintenance-sub">This page is being updated and will be back soon.</p>
+<p class="maintenance-title"><span class="lang-en">Under Maintenance</span><span class="lang-ko">점검 중</span></p>
+<p class="maintenance-sub"><span class="lang-en">This page is being updated and will be back soon.</span><span class="lang-ko">현재 업데이트 중입니다. 곧 다시 찾아뵙겠습니다.</span></p>
 </div>
 
 <!--

@@ -3,36 +3,35 @@ layout: default
 title: Publications
 ---
 <!--
-  Publications page — Minjae Lee
-  Served at /publications.html on GitHub Pages.
-  bold = me (Minjae Lee)
+  Publications page — Minjae Lee. bold = me (Minjae Lee)
+  Headings/labels are bilingual (.lang-en/.lang-ko); entries are shared.
 -->
 
 <div align="center">
 
-<h1>Publications</h1>
+<h1><span class="lang-en">Publications</span><span class="lang-ko">논문</span></h1>
 
-<p>First-author: 9, Co-author: 9</p>
+<p><span class="lang-en">First author: 9 · Co-author: 9</span><span class="lang-ko">주저자 9편 · 공저자 9편</span></p>
 
 </div>
 
 ---
 
-## Under Review
+## <span class="lang-en">Under Review</span><span class="lang-ko">심사 중</span>
 
 <div class="under-review" markdown="1">
 
-- **Minjae Lee**, et al. LoRa-MOS: Range-Robust LiDAR Moving Object Segmentation. *IEEE RA-L, <span class="rev">under revision</span>*, 2026.
+- **Minjae Lee**, et al. LoRa-MOS: Range-Robust LiDAR Moving Object Segmentation. *IEEE RA-L, <span class="rev"><span class="lang-en">under revision</span><span class="lang-ko">수정 중</span></span>*, 2026.
 
 </div>
 
-## International Journals
+## <span class="lang-en">International Journals</span><span class="lang-ko">국제 저널</span>
 
 - **Minjae Lee**, U. Kim, G. W. Kim, and S. Lee. SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
 - **Minjae Lee**, S. Lee, and H. Seo. Enhancing Early Alzheimer's Disease Detection via Transfer Learning: From Big Structural MRI Datasets to Ethnically Distinct Small Cohorts. *Applied Sciences*, 16(2), 1004, 2026.
 - S. Yeon, **Minjae Lee**, J. Bae, and S. Lee. Resolving Ambiguity in Pointing Gestures Using Contextual Reasoning from Large Language Models. *Computer Modeling in Engineering &amp; Sciences (CMES)*, 2026.
 
-## International Conferences
+## <span class="lang-en">International Conferences</span><span class="lang-ko">국제 학회</span>
 
 - **Minjae Lee**, I. Ha, S. M. Choi, G. W. Kim, and S. Lee. X-MOS: A Heterogeneous Cross-LiDAR Generalization Framework for Moving Object Segmentation. *IEEE Int. Conf. on Robotics and Automation (ICRA)*, 2026.
 - **Minjae Lee**, S. M. Choi, G. W. Kim, and S. Lee. HBRB-BoW: A Retrained Bag-of-Words Vocabulary for ORB-SLAM via Hierarchical BRB-KMeans. *ICRA 2026 (Late-Breaking Results)*.
@@ -42,12 +41,12 @@ title: Publications
 - J. Bae, **Minjae Lee**, U. Kim, and S. Lee. SLAM-Based Illegal Parking Detection System. *SIGGRAPH Asia 2024*.
 - **Minjae Lee**, J. Bae, S. M. Choi, and S. Lee. Finger-Pointing Interface for Human Gesture Recognition Based on Real-Time Geometric Comprehension. *SIGGRAPH Asia 2024*.
 
-## Domestic Journals (Korean)
+## <span class="lang-en">Domestic Journals</span><span class="lang-ko">국내 저널</span>
 
 - **이민재**, 배지호, 이수원. Watch My Wrist: 증강현실 환경에서 카메라 시야를 벗어난 손동작 인식을 위한 손목 근육 움직임 기반 예측. *한국정보기술학회논문지*, 23(7), 167–170, 2025.
 - **이민재**, 배지호, 최상민, 이수원. 3D LiDAR 환경에서의 동적 객체 탐지 개선을 위한 평면 탐지 및 프로젝션 기반 필터. *한국정보기술학회논문지*, 22(12), 19–27, 2024.
 
-## Domestic Conferences (Korean)
+## <span class="lang-en">Domestic Conferences</span><span class="lang-ko">국내 학회</span>
 
 - 하일환, **이민재**, 이수원. 영상처리 기반의 디지털 발표 환경용 손 떨림 보정 포인팅 시스템. *2025년 한국정보기술학회 추계종합학술대회*.
 - 연수민, **이민재**, 이수원. 3D 손 추적 기반의 저비용 혼합 현실(MR) 시스템. *2024년 한국정보기술학회 추계종합학술대회*.

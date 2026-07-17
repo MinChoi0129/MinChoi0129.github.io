@@ -79,6 +79,39 @@ a:hover { text-decoration: underline; }
   color: #fff;
 }
 
+/* ---- Language switch ---- */
+html[data-lang="en"] .lang-ko { display: none !important; }
+html[data-lang="ko"] .lang-en { display: none !important; }
+
+.header-right { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.lang-opt {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 6px 11px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background-color .15s ease, color .15s ease;
+}
+.lang-opt:hover { color: var(--accent); }
+html[data-lang="en"] .lang-opt[data-set-lang="en"],
+html[data-lang="ko"] .lang-opt[data-set-lang="ko"] { background: var(--accent); color: #fff; }
+
+/* CV page: single download button aligns right (language decides which shows) */
+.cv-bar { justify-content: flex-end; }
+
 /* ---- Content ---- */
 .content {
   max-width: var(--maxw);

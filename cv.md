@@ -3,34 +3,25 @@ layout: default
 title: CV
 ---
 <!--
-  CV page. Shows page 1 only of the Korean and English CVs (assets/pdf/).
-  Language toggle is pure CSS (radio + :checked). PDF viewer chrome
-  (toolbar / thumbnails / print) is hidden via #toolbar=0&navpanes=0.
+  CV page. The PDF shown follows the site language switch:
+  English site -> cv_eng.pdf, Korean site -> cv.pdf. Page 1 only,
+  viewer chrome hidden via #toolbar=0&navpanes=0.
 -->
 
 <div align="center">
 
-<h1>Curriculum Vitae</h1>
+<h1><span class="lang-en">Curriculum Vitae</span><span class="lang-ko">이력서</span></h1>
 
 </div>
-
-<div class="cv">
-<input class="cv-radio" type="radio" name="cvlang" id="cv-ko" checked>
-<input class="cv-radio" type="radio" name="cvlang" id="cv-en">
 
 <div class="cv-bar">
-<div class="cv-tabs">
-<label for="cv-ko">Korean</label>
-<label for="cv-en">English</label>
-</div>
-<a class="btn-download cv-dl-ko" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
-<a class="btn-download cv-dl-en" href="{{ '/assets/pdf/cv_eng.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+<a class="btn-download lang-en" href="{{ '/assets/pdf/cv_eng.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+<a class="btn-download lang-ko" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">PDF 다운로드</a>
 </div>
 
-<div class="pdf-frame cv-frame frame-ko" style="aspect-ratio: 612 / 792;">
-<iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Curriculum Vitae (Korean)"></iframe>
-</div>
-<div class="pdf-frame cv-frame frame-en" style="aspect-ratio: 612 / 792;">
+<div class="pdf-frame cv-frame lang-en" style="aspect-ratio: 612 / 792;">
 <iframe src="{{ '/assets/pdf/cv_eng.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Curriculum Vitae (English)"></iframe>
 </div>
+<div class="pdf-frame cv-frame lang-ko" style="aspect-ratio: 612 / 792;">
+<iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}#toolbar=0&amp;navpanes=0&amp;view=FitH" title="이력서 (한국어)"></iframe>
 </div>
