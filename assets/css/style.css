@@ -592,48 +592,18 @@ code {
 }
 
 /* Reading mode: compact list on the left, the selected panel on the right */
-.projects.reading {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-.projects.reading .p-sidebar {
-  flex: none;
-  width: 244px;
-  position: sticky;
-  top: calc(var(--header-h, 64px) + 16px);
-  max-height: calc(100vh - var(--header-h, 64px) - 32px);
-  overflow-y: auto;
-}
-
+/* Reading mode: the detail stays in the centered page column (aligned with the
+   title); the compact list becomes the navigator. */
 .projects.reading .p-back {
   display: inline-block;
 }
 
-.projects.reading .p-list {
-  gap: 8px;
+.projects.reading .p-detail {
+  display: block;
 }
 
-.projects.reading .p-head {
-  padding: 9px 10px;
-  gap: 10px;
-  border-radius: 10px;
-  box-shadow: none;
-}
-
-.projects.reading .p-thumb {
-  width: 42px;
-  height: 42px;
-  border-radius: 8px;
-}
-
-.projects.reading .p-title {
-  font-size: 14px;
-}
-
-.projects.reading .p-desc {
-  display: none;
+.projects.reading .p-panel.active {
+  display: block;
 }
 
 .projects.reading .p-item.active .p-head {
@@ -641,26 +611,87 @@ code {
   background: rgba(37, 99, 235, 0.06);
 }
 
-.projects.reading .p-detail {
-  display: block;
-  flex: 1;
-  min-width: 0;
+/* Default (narrower): list becomes a horizontal strip above the centered detail */
+.projects.reading .p-sidebar {
+  margin-bottom: 18px;
 }
 
-.projects.reading .p-panel.active {
-  display: block;
+.projects.reading .p-list {
+  flex-direction: row;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 6px;
 }
 
-/* Wide screens: move the sidebar into the left gutter so the reading pane is
-   centered under the page title (not centered within sidebar + pane). */
+.projects.reading .p-head {
+  flex: none;
+  flex-direction: column;
+  width: 104px;
+  text-align: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.projects.reading .p-thumb {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+}
+
+.projects.reading .p-meta {
+  align-items: center;
+  gap: 2px;
+}
+
+.projects.reading .p-title {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.projects.reading .p-desc {
+  display: none;
+}
+
+/* Wide: list docks into the left gutter as a fixed sidebar; the detail stays
+   in the centered column, aligned with the page title. */
 @media (min-width: 1280px) {
-  .projects.reading {
-    margin-left: -244px;
-    width: calc(100% + 244px);
+  .projects.reading .p-sidebar {
+    position: fixed;
+    top: calc(var(--header-h, 64px) + 16px);
+    left: max(16px, calc(50% - 634px)); /* 410 half-column + 24 gap + 200 sidebar */
+    width: 200px;
+    max-height: calc(100vh - var(--header-h, 64px) - 32px);
+    overflow-y: auto;
+    margin-bottom: 0;
   }
 
-  .projects.reading .p-sidebar {
-    width: 220px;
+  .projects.reading .p-list {
+    flex-direction: column;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .projects.reading .p-head {
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    gap: 10px;
+    padding: 9px 10px;
+  }
+
+  .projects.reading .p-thumb {
+    width: 42px;
+    height: 42px;
+  }
+
+  .projects.reading .p-meta {
+    align-items: flex-start;
+  }
+
+  .projects.reading .p-title {
+    font-size: 14px;
   }
 }
 
@@ -714,18 +745,5 @@ code {
 
   .pdf-frame iframe {
     height: 72vh;
-  }
-
-  /* Reading mode stacks: compact list above the detail on small screens */
-  .projects.reading {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .projects.reading .p-sidebar {
-    width: auto;
-    position: static;
-    max-height: none;
-    overflow: visible;
   }
 }
