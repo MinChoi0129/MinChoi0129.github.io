@@ -17,7 +17,7 @@ title: Publications
 
 ---
 
-## <span class="lang-en">Under Review</span><span class="lang-ko">심사 중</span>
+## <span class="lang-en">Under Review / Revision</span><span class="lang-ko">심사·수정 중</span>
 
 <div class="under-review" markdown="1">
 
