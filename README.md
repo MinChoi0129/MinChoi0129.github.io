@@ -39,7 +39,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
 
 <div class="lang-en" markdown="1">
-- **2026.07** &nbsp;💼&nbsp; Joining **ETRI** as a post-master's researcher.
+- **2026.07** &nbsp;💼&nbsp; Joining **ETRI** as a researcher.
 - **2026.05** &nbsp;🏆&nbsp; Excellence Award, Manufacturing AI Competition (GNU).
 - **2026.05** &nbsp;🏆&nbsp; Young Pioneer Researcher Award (GNU).
 - **2026.04** &nbsp;📝&nbsp; One paper accepted to **ICRA 2026** (Late-Breaking Results).
