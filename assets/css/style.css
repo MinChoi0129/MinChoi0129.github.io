@@ -432,17 +432,6 @@ code {
   margin-bottom: 14px;
 }
 
-/* Secondary (outlined) download button — e.g. the full CV with publications */
-.btn-secondary {
-  background: transparent;
-  color: var(--accent);
-}
-
-.btn-secondary:hover {
-  color: var(--accent);
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
-}
-
 .cv-tabs {
   display: inline-flex;
   background: #fff;
