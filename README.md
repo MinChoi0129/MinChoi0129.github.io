@@ -39,6 +39,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
 
 <div class="lang-en" markdown="1">
+- **2026.07** &nbsp;💼&nbsp; Accepted a position at **ETRI** (Electronics and Telecommunications Research Institute).
 - **2026.05** &nbsp;🏆&nbsp; Excellence Award, Manufacturing AI Competition (GNU).
 - **2026.05** &nbsp;🏆&nbsp; Young Pioneer Researcher Award (GNU).
 - **2026.04** &nbsp;📝&nbsp; One paper accepted to **ICRA 2026** (Late-Breaking Results).
@@ -53,6 +54,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 </div>
 <div class="lang-ko" markdown="1">
+- **2026.07** &nbsp;💼&nbsp; <strong>ETRI</strong>(한국전자통신연구원)에 합격하여 근무 예정.
 - **2026.05** &nbsp;🏆&nbsp; 제조 AI 경진대회 우수상 (경상국립대).
 - **2026.05** &nbsp;🏆&nbsp; 젊은 개척 연구자상 (경상국립대).
 - **2026.04** &nbsp;📝&nbsp; <strong>ICRA 2026</strong> (Late-Breaking Results)에 논문 1편 게재 확정.
