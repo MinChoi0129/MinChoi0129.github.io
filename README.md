@@ -56,7 +56,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 </div>
 <div class="lang-ko" markdown="1">
-- **2026.08** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터공학과 석사 졸업.
+- **2026.08** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터공학부 석사 졸업.
 - **2026.07** &nbsp;💼&nbsp; <strong>ETRI</strong>에 석사후연구원으로 8월 합류 예정.
 - **2026.05** &nbsp;🏆&nbsp; 제조 AI 경진대회 우수상 (경상국립대).
 - **2026.05** &nbsp;🏆&nbsp; 젊은 개척 연구자상 (경상국립대).
