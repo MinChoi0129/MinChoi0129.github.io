@@ -39,6 +39,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
 
 <div class="lang-en" markdown="1">
+- **2026.08** &nbsp;🎓&nbsp; M.S. in Computer Science and Engineering, Gyeongsang National University.
 - **2026.07** &nbsp;💼&nbsp; Joining **ETRI** as a researcher in August.
 - **2026.05** &nbsp;🏆&nbsp; Excellence Award, Manufacturing AI Competition (GNU).
 - **2026.05** &nbsp;🏆&nbsp; Young Pioneer Researcher Award (GNU).
@@ -47,6 +48,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2026.01** &nbsp;📝&nbsp; One paper accepted to **Applied Sciences**.
 - **2025.12** &nbsp;📝&nbsp; One paper accepted to **IEEE Robotics and Automation Letters (RA-L)**.
 - **2025.05** &nbsp;🏆&nbsp; Excellence Award, Glocal English Speech Contest (GNU).
+- **2025.02** &nbsp;🎓&nbsp; B.S. in Computer Science, Gyeongsang National University (early graduation).
 - **2025.02** &nbsp;🏆&nbsp; Gyeongsangnam-do Governor's Award (1st in IT College).
 - **2024.12** &nbsp;🏆&nbsp; Grand Prize, Capstone Design Competition (GNU).
 - **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
@@ -54,6 +56,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 </div>
 <div class="lang-ko" markdown="1">
+- **2026.08** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터공학과 석사 졸업.
 - **2026.07** &nbsp;💼&nbsp; <strong>ETRI</strong>에 석사후연구원으로 8월 합류 예정.
 - **2026.05** &nbsp;🏆&nbsp; 제조 AI 경진대회 우수상 (경상국립대).
 - **2026.05** &nbsp;🏆&nbsp; 젊은 개척 연구자상 (경상국립대).
@@ -62,6 +65,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2026.01** &nbsp;📝&nbsp; <strong>Applied Sciences</strong>에 논문 1편 게재 확정.
 - **2025.12** &nbsp;📝&nbsp; <strong>IEEE Robotics and Automation Letters (RA-L)</strong>에 논문 1편 게재 확정.
 - **2025.05** &nbsp;🏆&nbsp; 글로컬 영어 스피치 대회 우수상 (경상국립대).
+- **2025.02** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터과학과 학사 조기졸업.
 - **2025.02** &nbsp;🏆&nbsp; 경상남도지사상 (IT공과대학 수석).
 - **2024.12** &nbsp;🏆&nbsp; 캡스톤디자인 경진대회 최우수상 (경상국립대).
 - **2024.09** &nbsp;📝&nbsp; <strong>SIGGRAPH Asia 2024</strong>에 논문 2편 게재 확정.
