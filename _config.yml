@@ -15,6 +15,10 @@ collections:
   projects:
     output: false
 
+# Show a "under maintenance" notice on /projects instead of the project list.
+# Set to false to publish the entries in _projects/ again.
+projects_maintenance: true
+
 # CV LaTeX sources are kept for version control but not served.
 exclude:
   - cv-src
