@@ -59,7 +59,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 <summary>Before 2023</summary>
 
 - **2022.07** &nbsp;🎖️&nbsp; Completed mandatory military service (discharged).
-- **2020.03** &nbsp;🏫&nbsp; Entered Gyeongsang National University, Department of Computer Science.
+- **2020.03** &nbsp;🏫&nbsp; Entered Department of Computer Science at Gyeongsang National University.
 - **2020.01** &nbsp;🎓&nbsp; Graduated from Jinju Dongmyeong High School.
 
 </details>
