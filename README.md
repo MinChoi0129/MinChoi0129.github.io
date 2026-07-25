@@ -56,11 +56,11 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 
 <details class="news-more" markdown="1">
-<summary>Earlier &middot; before 2023</summary>
+<summary>Before 2023</summary>
 
 - **2022.07** &nbsp;🎖️&nbsp; Completed mandatory military service (discharged).
 - **2020.03** &nbsp;🏫&nbsp; Entered Gyeongsang National University, Computer Science.
-- **2020.01** &nbsp;🎓&nbsp; Graduated from Jinju Dongmyung High School.
+- **2020.01** &nbsp;🎓&nbsp; Graduated from Jinju Dongmyeong High School.
 
 </details>
 </div>
@@ -82,7 +82,7 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2023.08** &nbsp;🏆&nbsp; 멋쟁이사자처럼 해커톤 동상 (전국 3위).
 
 <details class="news-more" markdown="1">
-<summary>이전 소식 &middot; 2023년 이전</summary>
+<summary>2023년 이전</summary>
 
 - **2022.07** &nbsp;🎖️&nbsp; 군 복무 만료 전역.
 - **2020.03** &nbsp;🏫&nbsp; 경상국립대학교 컴퓨터과학과 입학.
