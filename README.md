@@ -54,6 +54,15 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
 - **2023.11** &nbsp;🏆&nbsp; Grand Prize, NAVER 1784 School Revolution (1st nationwide).
 - **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
+
+<details class="news-more" markdown="1">
+<summary>Earlier &middot; before 2023</summary>
+
+- **2022.07** &nbsp;🎖️&nbsp; Completed mandatory military service (discharged).
+- **2020.03** &nbsp;🏫&nbsp; Entered Gyeongsang National University, Computer Science.
+- **2020.01** &nbsp;🎓&nbsp; Graduated from Jinju Dongmyung High School.
+
+</details>
 </div>
 <div class="lang-ko" markdown="1">
 - **2026.08** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터공학부 석사 졸업.
@@ -71,6 +80,15 @@ I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" targe
 - **2024.09** &nbsp;📝&nbsp; <strong>SIGGRAPH Asia 2024</strong>에 논문 2편 게재 확정.
 - **2023.11** &nbsp;🏆&nbsp; 네이버 1784 스쿨혁명 대상 (전국 1위).
 - **2023.08** &nbsp;🏆&nbsp; 멋쟁이사자처럼 해커톤 동상 (전국 3위).
+
+<details class="news-more" markdown="1">
+<summary>이전 소식 &middot; 2023년 이전</summary>
+
+- **2022.07** &nbsp;🎖️&nbsp; 군 복무 만료 전역.
+- **2020.03** &nbsp;🏫&nbsp; 경상국립대학교 컴퓨터과학과 입학.
+- **2020.01** &nbsp;🎓&nbsp; 진주동명고등학교 졸업.
+
+</details>
 </div>
 
 ## <span class="lang-en">Contact</span><span class="lang-ko">연락처</span>

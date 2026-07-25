@@ -695,6 +695,49 @@ code {
   }
 }
 
+/* ---- Collapsible older news ---- */
+.news-more {
+  margin-top: 6px;
+}
+
+.news-more > summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 0;
+  user-select: none;
+}
+
+.news-more > summary::-webkit-details-marker {
+  display: none;
+}
+
+.news-more > summary::before {
+  content: "▸";
+  font-size: 12px;
+  transition: transform .15s ease;
+}
+
+.news-more[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.news-more > summary:hover {
+  color: var(--fg);
+}
+
+/* Tighten the gap the closed list would otherwise leave. */
+.news-more[open] > ul,
+.news-more[open] > :not(summary) {
+  margin-top: 6px;
+}
+
 /* ---- Under-maintenance notice ---- */
 .maintenance {
   max-width: 520px;
