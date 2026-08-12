@@ -54,12 +54,12 @@ My ultimate goal is to make computers understand space and time. To this end, my
 - **2025.05** &nbsp;🏆&nbsp; Excellence Award, Glocal English Speech Contest (GNU).
 - **2025.02** &nbsp;🎓&nbsp; B.S. in Computer Science, Gyeongsang National University (early graduation).
 - **2025.02** &nbsp;🏆&nbsp; Gyeongsangnam-do Governor's Award (Valedictorian, IT College).
-- **2024.12** &nbsp;🏆&nbsp; Grand Prize, Capstone Design Competition (GNU).
-- **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
 
 <details class="news-more" markdown="1">
-<summary>Before 2024</summary>
+<summary>Before 2025</summary>
 
+- **2024.12** &nbsp;🏆&nbsp; Grand Prize, Capstone Design Competition (GNU).
+- **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
 - **2023.11** &nbsp;🏆&nbsp; Grand Prize, NAVER 1784 School Revolution (1st nationwide).
 - **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 - **2022.07** &nbsp;🎖️&nbsp; Completed mandatory military service (discharged).
@@ -70,7 +70,7 @@ My ultimate goal is to make computers understand space and time. To this end, my
 </div>
 <div class="lang-ko" markdown="1">
 - **2026.08** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터공학부 석사 졸업.
-- **2026.07** &nbsp;💼&nbsp; <strong>ETRI</strong>에 석사후연구원으로 8월 합류 예정.
+- **2026.07** &nbsp;💼&nbsp; <strong>ETRI</strong>에 석사후연수연구원으로 8월 합류 예정.
 - **2026.05** &nbsp;🏆&nbsp; 제조 AI 경진대회 우수상 (경상국립대).
 - **2026.05** &nbsp;🏆&nbsp; 젊은 개척 연구자상 (경상국립대).
 - **2026.04** &nbsp;📝&nbsp; <strong>ICRA 2026</strong> (Late-Breaking Results)에 논문 1편 게재 확정.
@@ -80,12 +80,12 @@ My ultimate goal is to make computers understand space and time. To this end, my
 - **2025.05** &nbsp;🏆&nbsp; 글로컬 영어 스피치 대회 우수상 (경상국립대).
 - **2025.02** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터과학과 학사 조기졸업.
 - **2025.02** &nbsp;🏆&nbsp; 경상남도지사상 (IT공과대학 수석).
-- **2024.12** &nbsp;🏆&nbsp; 캡스톤디자인 경진대회 최우수상 (경상국립대).
-- **2024.09** &nbsp;📝&nbsp; <strong>SIGGRAPH Asia 2024</strong>에 논문 2편 게재 확정.
 
 <details class="news-more" markdown="1">
-<summary>2024년 이전</summary>
+<summary>2025년 이전</summary>
 
+- **2024.12** &nbsp;🏆&nbsp; 캡스톤디자인 경진대회 최우수상 (경상국립대).
+- **2024.09** &nbsp;📝&nbsp; <strong>SIGGRAPH Asia 2024</strong>에 논문 2편 게재 확정.
 - **2023.11** &nbsp;🏆&nbsp; 네이버 1784 스쿨혁명 대상 (전국 1위).
 - **2023.08** &nbsp;🏆&nbsp; 멋쟁이사자처럼 해커톤 동상 (전국 3위).
 - **2022.07** &nbsp;🎖️&nbsp; 군 복무 만료 전역.
@@ -99,5 +99,5 @@ My ultimate goal is to make computers understand space and time. To this end, my
 
 <p class="contact-links">
 <a class="email-btn" data-user="leeminjae0129" data-domain="gmail.com" aria-label="Email Minjae Lee (personal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><strong><span class="lang-en">Personal</span><span class="lang-ko">개인</span></strong> <span class="addr">leeminjae0129 [at] gmail [dot] com</span></span></a>
-<a class="email-btn" data-user="wjdchs0129" data-domain="gnu.ac.kr" aria-label="Email Minjae Lee (primary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><strong><span class="lang-en">Primary</span><span class="lang-ko">대표</span></strong> <span class="addr">wjdchs0129 [at] gnu [dot] ac [dot] kr</span></span></a>
+<a class="email-btn" data-user="wjdchs0129" data-domain="gnu.ac.kr" aria-label="Email Minjae Lee (work)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><strong><span class="lang-en">Work</span><span class="lang-ko">업무</span></strong> <span class="addr">wjdchs0129 [at] gnu [dot] ac [dot] kr</span></span></a>
 </p>
