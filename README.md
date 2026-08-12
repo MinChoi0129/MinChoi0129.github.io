@@ -15,8 +15,8 @@ permalink: /
 
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
-<p><b><span class="lang-en">M.S. in Computer Science &amp; Engineering (Expected August 2026)</span><span class="lang-ko">컴퓨터공학 석사 (2026년 8월 졸업 예정)</span></b><br/>
-<a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, <span class="lang-en">Gyeongsang National University · Jinju, South Korea</span><span class="lang-ko">경상국립대학교 · 대한민국 진주</span></p>
+<p><b><span class="lang-en">Researcher · ETRI</span><span class="lang-ko">석사후연수연구원 · 한국전자통신연구원(ETRI)</span></b><br/>
+<span class="lang-en">M.S. in Computer Science &amp; Engineering · <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University · Jinju, South Korea</span><span class="lang-ko">컴퓨터공학 석사 · <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, 경상국립대학교 · 대한민국 진주</span></p>
 
 <p class="social-links">
 <a class="social-btn scholar" href="https://scholar.google.com/citations?user=Ohcu4AwAAAAJ&amp;hl=ko&amp;authuser=1" target="_blank" rel="noopener" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg><span>Scholar</span></a>
@@ -30,10 +30,14 @@ permalink: /
 ---
 
 <div class="lang-en" markdown="1">
-I am Minjae Lee, an M.S. candidate at the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University, graduating in August 2026. I dream of bringing the technologies imagined in science-fiction films like Iron Man and the Avengers to life. My research focuses on **4D perception** to enable computers to understand space and time. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **World Models**.
+I am Minjae Lee, a **Researcher** at ETRI. I earned my **M.S. in Computer Science and Engineering** from the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> at Gyeongsang National University in August 2026, advised by <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">Prof. Suwon Lee</a>. I dream of bringing the technologies imagined in science-fiction films like Iron Man and the Avengers to life.
+
+My goal is to make computers understand space and time. To this end, my research focuses on **4D perception**. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **World Models**.
 </div>
 <div class="lang-ko" markdown="1">
-저는 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> 소속 이민재이며, 2026년 8월 컴퓨터공학 석사 졸업을 앞두고 있습니다. 아이언맨, 어벤져스 같은 SF 영화 속 기술이 현실이 되기를 꿈꿉니다. 컴퓨터가 공간과 시간을 이해하도록 하는 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <strong>LiDAR 이동 객체 분할(MOS)</strong>을 다루며, <strong>실세계 적용성(real-world applicability)</strong>을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>월드 모델(World Model)</strong>도 탐구하고 있습니다.
+저는 이민재이며, 현재 한국전자통신연구원(ETRI)에서 석사후연수연구원으로 일하고 있습니다. 2026년 8월 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>에서 <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">이수원 교수님</a>의 지도 아래 컴퓨터공학 석사 학위를 받았습니다. 아이언맨, 어벤져스 같은 SF 영화 속 기술이 현실이 되기를 꿈꿉니다.
+
+제 목표는 컴퓨터가 공간과 시간을 이해하도록 만드는 것입니다. 이를 위해 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <strong>LiDAR 이동 객체 분할(MOS)</strong>을 다루며, <strong>실세계 적용성(real-world applicability)</strong>을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>월드 모델(World Model)</strong>도 탐구하고 있습니다.
 </div>
 
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
