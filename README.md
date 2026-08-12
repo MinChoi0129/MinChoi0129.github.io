@@ -15,7 +15,7 @@ permalink: /
 
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
-<p><b><span class="lang-en">Post-Master's Research Associate · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a></span><span class="lang-ko">석사후연수연구원 · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a></span></b><br/>
+<p><b><span class="lang-en">Post-Master’s Research Associate · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a></span><span class="lang-ko">석사후연수연구원 · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a></span></b><br/>
 <span class="lang-en">M.S. in Computer Science &amp; Engineering<br/><a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University · Jinju, South Korea</span><span class="lang-ko">컴퓨터공학 석사<br/><a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, 경상국립대학교 · 대한민국 진주</span></p>
 
 <p class="social-links">
