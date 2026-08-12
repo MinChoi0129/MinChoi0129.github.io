@@ -21,7 +21,7 @@ title: Publications
 
 <div class="under-review" markdown="1">
 
-- **Minjae Lee**, et al. LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation via Logarithmic Spatial Representation and Range-Balanced Learning. *IEEE RA-L, <span class="rev"><span class="lang-en">under revision</span><span class="lang-ko">수정 중</span></span>*, 2026.
+- **Minjae Lee**, et al. LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation via Logarithmic Spatial Representation and Range-Balanced Learning. *IEEE RA-L, <span class="rev"><span class="lang-en">under final review</span><span class="lang-ko">최종 심사 중</span></span>*, 2026.
 
 </div>
 
