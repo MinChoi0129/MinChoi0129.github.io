@@ -53,7 +53,7 @@ My goal is to make computers understand space and time. To this end, my research
 - **2025.12** &nbsp;📝&nbsp; One paper accepted to **IEEE Robotics and Automation Letters (RA-L)**.
 - **2025.05** &nbsp;🏆&nbsp; Excellence Award, Glocal English Speech Contest (GNU).
 - **2025.02** &nbsp;🎓&nbsp; B.S. in Computer Science, Gyeongsang National University (early graduation).
-- **2025.02** &nbsp;🏆&nbsp; Gyeongsangnam-do Governor's Award (1st in IT College).
+- **2025.02** &nbsp;🏆&nbsp; Gyeongsangnam-do Governor's Award (Valedictorian, IT College).
 - **2024.12** &nbsp;🏆&nbsp; Grand Prize, Capstone Design Competition (GNU).
 - **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
 
