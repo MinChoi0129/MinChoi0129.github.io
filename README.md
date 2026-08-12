@@ -15,7 +15,7 @@ permalink: /
 
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
-<p><b><span class="lang-en">Researcher · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a></span><span class="lang-ko">석사후연수연구원 · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a></span></b><br/>
+<p><b><span class="lang-en">Post-Master's Research Associate · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a></span><span class="lang-ko">석사후연수연구원 · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a></span></b><br/>
 <span class="lang-en">M.S. in Computer Science &amp; Engineering<br/><a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, Gyeongsang National University · Jinju, South Korea</span><span class="lang-ko">컴퓨터공학 석사<br/><a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>, 경상국립대학교 · 대한민국 진주</span></p>
 
 <p class="social-links">
@@ -30,7 +30,7 @@ permalink: /
 ---
 
 <div class="lang-en" markdown="1">
-I am Minjae Lee, and I hope the technologies from SF movies like Iron Man and the Avengers will one day become real. I am currently a Researcher at <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a>. I earned my **M.S. in Computer Science and Engineering** from the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> at Gyeongsang National University, advised by <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">Prof. Suwon Lee</a>.
+I am Minjae Lee, and I hope the technologies from SF movies like Iron Man and the Avengers will one day become real. I am currently a Post-Master's Research Associate at <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a>. I earned my **M.S. in Computer Science and Engineering** from the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> at Gyeongsang National University, advised by <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">Prof. Suwon Lee</a>.
 
 My goal is to make computers understand space and time. To this end, my research focuses on **4D perception**. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **World Models**.
 </div>
@@ -44,7 +44,7 @@ My goal is to make computers understand space and time. To this end, my research
 
 <div class="lang-en" markdown="1">
 - **2026.08** &nbsp;🎓&nbsp; M.S. in Computer Science and Engineering, Gyeongsang National University.
-- **2026.07** &nbsp;💼&nbsp; Joining **ETRI** as a researcher in August.
+- **2026.07** &nbsp;💼&nbsp; Joining **ETRI** as a Post-Master's Research Associate in August.
 - **2026.05** &nbsp;🏆&nbsp; Excellence Award, Manufacturing AI Competition (GNU).
 - **2026.05** &nbsp;🏆&nbsp; Young Pioneer Researcher Award (GNU).
 - **2026.04** &nbsp;📝&nbsp; One paper accepted to **ICRA 2026** (Late-Breaking Results).
