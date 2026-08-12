@@ -30,7 +30,7 @@ permalink: /
 ---
 
 <div class="lang-en" markdown="1">
-I am Minjae Lee, who hopes the technologies imagined in science-fiction films like Iron Man and the Avengers will become reality. I am currently a Researcher at ETRI. I earned my **M.S. in Computer Science and Engineering** from the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> at Gyeongsang National University, advised by <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">Prof. Suwon Lee</a>.
+I am Minjae Lee, and I hope the technologies from SF movies like Iron Man and the Avengers will one day become real. I am currently a Researcher at ETRI. I earned my **M.S. in Computer Science and Engineering** from the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> at Gyeongsang National University, advised by <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">Prof. Suwon Lee</a>.
 
 My goal is to make computers understand space and time. To this end, my research focuses on **4D perception**. Specifically, I investigate **LiDAR Moving Object Segmentation (MOS)** to model spatiotemporal dynamics. To achieve **real-world applicability**, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **World Models**.
 </div>
