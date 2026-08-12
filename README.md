@@ -56,12 +56,12 @@ My goal is to make computers understand space and time. To this end, my research
 - **2025.02** &nbsp;🏆&nbsp; Gyeongsangnam-do Governor's Award (1st in IT College).
 - **2024.12** &nbsp;🏆&nbsp; Grand Prize, Capstone Design Competition (GNU).
 - **2024.09** &nbsp;📝&nbsp; Two papers accepted to **SIGGRAPH Asia 2024**.
-- **2023.11** &nbsp;🏆&nbsp; Grand Prize, NAVER 1784 School Revolution (1st nationwide).
-- **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 
 <details class="news-more" markdown="1">
-<summary>Before 2023</summary>
+<summary>Before 2024</summary>
 
+- **2023.11** &nbsp;🏆&nbsp; Grand Prize, NAVER 1784 School Revolution (1st nationwide).
+- **2023.08** &nbsp;🏆&nbsp; Bronze Prize, LikeLion Web Development Hackathon (3rd nationwide).
 - **2022.07** &nbsp;🎖️&nbsp; Completed mandatory military service (discharged).
 - **2020.03** &nbsp;🏫&nbsp; Entered Department of Computer Science at Gyeongsang National University.
 - **2020.01** &nbsp;🎓&nbsp; Graduated from Jinju Dongmyeong High School.
@@ -82,12 +82,12 @@ My goal is to make computers understand space and time. To this end, my research
 - **2025.02** &nbsp;🏆&nbsp; 경상남도지사상 (IT공과대학 수석).
 - **2024.12** &nbsp;🏆&nbsp; 캡스톤디자인 경진대회 최우수상 (경상국립대).
 - **2024.09** &nbsp;📝&nbsp; <strong>SIGGRAPH Asia 2024</strong>에 논문 2편 게재 확정.
-- **2023.11** &nbsp;🏆&nbsp; 네이버 1784 스쿨혁명 대상 (전국 1위).
-- **2023.08** &nbsp;🏆&nbsp; 멋쟁이사자처럼 해커톤 동상 (전국 3위).
 
 <details class="news-more" markdown="1">
-<summary>2023년 이전</summary>
+<summary>2024년 이전</summary>
 
+- **2023.11** &nbsp;🏆&nbsp; 네이버 1784 스쿨혁명 대상 (전국 1위).
+- **2023.08** &nbsp;🏆&nbsp; 멋쟁이사자처럼 해커톤 동상 (전국 3위).
 - **2022.07** &nbsp;🎖️&nbsp; 군 복무 만료 전역.
 - **2020.03** &nbsp;🏫&nbsp; 경상국립대학교 컴퓨터과학과 입학.
 - **2020.01** &nbsp;🎓&nbsp; 진주동명고등학교 졸업.
