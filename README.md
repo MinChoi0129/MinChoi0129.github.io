@@ -15,7 +15,7 @@ permalink: /
 
 <img src="assets/img/profile.png" alt="Minjae Lee" width="170" style="border-radius:50%;" />
 
-<p><b><span class="lang-en">Post-Graduate Researcher · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a> Visual Intelligence Lab</span><span class="lang-ko">석사후연수연구원 · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a> 시각지능연구실</span></b><br/>
+<p><b><span class="lang-en">Post-Graduate Researcher · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a> <a href="https://etri-visualintelligence.github.io/" target="_blank" rel="noopener">Visual Intelligence Lab</a></span><span class="lang-ko">석사후연수연구원 · <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a> <a href="https://etri-visualintelligence.github.io/" target="_blank" rel="noopener">시각지능연구실</a></span></b><br/>
 <span class="lang-en">M.S. in Computer Science &amp; Engineering</span><span class="lang-ko">컴퓨터공학 석사</span></p>
 
 <p class="social-links">
@@ -30,12 +30,12 @@ permalink: /
 ---
 
 <div class="lang-en" markdown="1">
-I am Minjae Lee, and I hope the technologies from SF movies like Iron Man and the Avengers will one day become real. I am currently a Post-Graduate Researcher at the <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a> Visual Intelligence Lab. I earned my M.S. in Computer Science and Engineering from the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> at Gyeongsang National University, advised by <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">Prof. Suwon Lee</a>.
+I am Minjae Lee, and I hope the technologies from SF movies like Iron Man and the Avengers will one day become real. I am currently a Post-Graduate Researcher at the <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">ETRI</a> <a href="https://etri-visualintelligence.github.io/" target="_blank" rel="noopener">Visual Intelligence Lab</a>. I earned my M.S. in Computer Science and Engineering from the <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a> at Gyeongsang National University, advised by <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">Prof. Suwon Lee</a>.
 
 My ultimate goal is to make computers understand space and time. To this end, my research focuses on **4D perception**. Specifically, I investigate <a href="https://semantic-kitti.org/tasks.html#mos" target="_blank" rel="noopener">LiDAR Moving Object Segmentation (MOS)</a> to model spatiotemporal dynamics. To achieve real-world applicability, my work emphasizes generalization across heterogeneous sensors, lightweight architectures, and robustness in diverse environments. More recently, I have been exploring **geometrically-consistent, video-based world models**.
 </div>
 <div class="lang-ko" markdown="1">
-저는 아이언맨, 어벤져스 같은 SF 영화 속 기술이 현실이 되기를 마음속 깊이 꿈꾸는 이민재라고 합니다. 현재 <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a> 시각지능연구실에서 석사후연수연구원으로 근무하고 있습니다. 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>에서 <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">이수원 교수님</a>의 지도 아래 컴퓨터공학 석사 학위를 받았습니다.
+저는 아이언맨, 어벤져스 같은 SF 영화 속 기술이 현실이 되기를 마음속 깊이 꿈꾸는 이민재라고 합니다. 현재 <a href="https://www.etri.re.kr/kor/main/main.etri" target="_blank" rel="noopener">한국전자통신연구원(ETRI)</a> <a href="https://etri-visualintelligence.github.io/" target="_blank" rel="noopener">시각지능연구실</a>에서 석사후연수연구원으로 근무하고 있습니다. 경상국립대학교 <a href="https://apex.gnu.ac.kr" target="_blank" rel="noopener">APEX Lab</a>에서 <a href="https://apex.gnu.ac.kr/people" target="_blank" rel="noopener">이수원 교수님</a>의 지도 아래 컴퓨터공학 석사 학위를 받았습니다.
 
 제 최종 목표는 컴퓨터가 공간과 시간을 이해하도록 만드는 것입니다. 이를 위해 <strong>4D 인식(4D perception)</strong>을 연구합니다. 특히 시공간 동역학을 모델링하기 위해 <a href="https://semantic-kitti.org/tasks.html#mos" target="_blank" rel="noopener">LiDAR 이동 객체 분할(MOS)</a>을 다루며, 실세계 적용성(real-world applicability)을 위해 이종 센서 간 일반화, 경량 아키텍처, 다양한 환경에서의 강건성에 중점을 둡니다. 최근에는 <strong>기하적으로 일관된 비디오 기반 월드 모델</strong>도 탐구하고 있습니다.
 </div>
