@@ -5,13 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <script>
     // Apply saved language before paint (default: English) to avoid a flash.
+    // Sets both data-lang (drives the .lang-en/.lang-ko CSS) and the html
+    // lang attribute (screen readers, spell-check, font fallback).
     (function () {
       var l; try { l = localStorage.getItem('site-lang'); } catch (e) {}
-      document.documentElement.setAttribute('data-lang', l === 'ko' ? 'ko' : 'en');
+      l = l === 'ko' ? 'ko' : 'en';
+      document.documentElement.setAttribute('data-lang', l);
+      document.documentElement.setAttribute('lang', l);
     })();
   </script>
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
@@ -51,6 +59,7 @@
         opts[j].addEventListener('click', function () {
           var l = this.getAttribute('data-set-lang');
           root.setAttribute('data-lang', l);
+          root.setAttribute('lang', l);
           try { localStorage.setItem('site-lang', l); } catch (e) {}
         });
       }
