@@ -476,22 +476,38 @@ code {
   display: inline-flex;
 }
 
-/* CV preview: a page-1 image that links to the full PDF */
+/* CV preview: a page-1 image that links to the full PDF. The page is sized
+   to fit the viewport below the title and download button (whole page visible
+   without scrolling), centered; the frame hugs the image. */
 .cv-frame {
   display: block;
-  margin: 0;
+  width: fit-content;
+  max-width: 100%;
+  margin: 10px auto 0;
   border-radius: 0;
   text-decoration: none;
 }
 
-.cv-frame:hover {
-  text-decoration: none;
+.cv-frame a {
+  display: block;
+  line-height: 0;
 }
 
 .cv-frame img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - var(--header-h, 64px) - 210px);
+  min-height: 420px;
+}
+
+@media (max-width: 600px) {
+  .cv-frame img {
+    width: 100%;
+    max-height: none;
+    min-height: 0;
+  }
 }
 
 /* ---- Projects: vertical list <-> reading mode (sidebar + detail) ---- */
