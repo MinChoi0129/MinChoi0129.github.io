@@ -11,7 +11,8 @@ title: Projects
   desc_en, desc_ko, thumb, order) with a markdown body wrapped in paired
   <div class="lang-en" markdown="1"> / <div class="lang-ko" markdown="1">
   blocks, and drop a SQUARE thumbnail at assets/projects/<slug>/thumb.jpg.
-  The list renders every _projects/*.md automatically, sorted by order.
+  The list renders every _projects/*.md automatically, largest order first
+  (order is a chronological index, so the newest project sits on top).
 
   UX: collapsed = a vertical list of cards. Open one and the list shrinks to a
   left sidebar (Finder-style) while the chosen project's body fills the detail
@@ -33,7 +34,7 @@ title: Projects
 </div>
 {% else %}
 <div class="projects">
-{% assign items = site.projects | sort: 'order' %}
+{% assign items = site.projects | sort: 'order' | reverse %}
 <aside class="p-sidebar">
 <button class="p-back" type="button"><span class="lang-en">← All projects</span><span class="lang-ko">← 전체 목록</span></button>
 <ul class="p-list">
