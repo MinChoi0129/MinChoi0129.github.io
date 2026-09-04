@@ -43,8 +43,8 @@ My ultimate goal is to make computers understand space and time. To this end, my
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
 
 <div class="lang-en" markdown="1">
+- **2026.08** &nbsp;💼&nbsp; Joined the **ETRI Visual Intelligence Lab** as a Post-Graduate Researcher.
 - **2026.08** &nbsp;🎓&nbsp; M.S. in Computer Science and Engineering, Gyeongsang National University.
-- **2026.07** &nbsp;💼&nbsp; Joining the **ETRI Visual Intelligence Lab** as a Post-Graduate Researcher in August.
 - **2026.05** &nbsp;🏆&nbsp; Excellence Award, Manufacturing AI Competition (GNU).
 - **2026.05** &nbsp;🏆&nbsp; Young Pioneer Researcher Award (GNU).
 - **2026.04** &nbsp;📝&nbsp; One paper accepted to **ICRA 2026** (Late-Breaking Results).
@@ -69,8 +69,8 @@ My ultimate goal is to make computers understand space and time. To this end, my
 </details>
 </div>
 <div class="lang-ko" markdown="1">
+- **2026.08** &nbsp;💼&nbsp; <strong>ETRI 시각지능연구실</strong>에 석사후연수연구원으로 합류.
 - **2026.08** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터공학부 석사 졸업.
-- **2026.07** &nbsp;💼&nbsp; <strong>ETRI 시각지능연구실</strong>에 석사후연수연구원으로 8월 합류 예정.
 - **2026.05** &nbsp;🏆&nbsp; 제조 AI 경진대회 우수상 (경상국립대).
 - **2026.05** &nbsp;🏆&nbsp; 젊은 개척 연구자상 (경상국립대).
 - **2026.04** &nbsp;📝&nbsp; <strong>ICRA 2026</strong> (Late-Breaking Results)에 논문 1편 게재 확정.
