@@ -994,6 +994,11 @@ code {
   color: var(--muted);
 }
 
+#ed-entry-list li.inserted .name::after {
+  content: " (편집 중)";
+  color: var(--accent);
+}
+
 .adm-thumb {
   width: 96px;
   height: 96px;

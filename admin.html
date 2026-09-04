@@ -49,11 +49,10 @@ noindex: true
 </section>
 
 <section id="adm-editor" class="adm-card" hidden>
-  <h2>프로젝트 글</h2>
-  <div class="adm-row">
-    <label class="adm-inline">불러오기 <select id="ed-existing"><option value="">새 글</option></select></label>
-    <button id="ed-reload" type="button" class="adm-btn">목록 새로고침</button>
-  </div>
+  <div class="adm-row" style="justify-content: space-between;"><h2 style="margin: 0;">기존 글 수정</h2><button id="ed-reload" type="button" class="adm-btn">목록 새로고침</button></div>
+  <p id="ed-entries-note" class="adm-muted">GitHub 토큰을 저장하면 기존 글 목록이 여기에 나타납니다. 글 옆의 수정 버튼을 누르면 아래 편집란에 내용이 채워집니다.</p>
+  <ul id="ed-entry-list" class="adm-files"></ul>
+  <div class="adm-row" style="justify-content: space-between; margin-top: 22px;"><h2 id="ed-mode" style="margin: 0;">새 글</h2><button id="ed-new" type="button" class="adm-btn">새 글 쓰기</button></div>
   <div class="adm-grid">
     <label>제목 (EN)<input id="ed-title-en" type="text"></label>
     <label>제목 (KO)<input id="ed-title-ko" type="text"></label>
@@ -75,7 +74,6 @@ noindex: true
   <div class="adm-row">
     <button id="ed-publish" type="button" class="adm-btn primary">저장소에 올리기</button>
     <button id="ed-preview-btn" type="button" class="adm-btn">미리보기</button>
-    <button id="ed-new" type="button" class="adm-btn">새 글</button>
     <button id="ed-delete" type="button" class="adm-btn danger" hidden>이 글 삭제</button>
   </div>
   <div id="ed-preview" class="adm-preview" hidden></div>
@@ -256,18 +254,45 @@ noindex: true
   let lastSlug = '';
 
   async function refreshList() {
-    const sel = $('ed-existing');
+    const note = $('ed-entries-note');
+    if (!getToken()) { note.hidden = false; renderEntries(); return; }
     try {
       const list = await gh('GET', `${repoPath}/contents/${ENTRY_DIR}?ref=${REPO.branch}`);
       entries = (Array.isArray(list) ? list : []).filter((x) => x.type === 'file' && /\.md$/.test(x.name));
     } catch (err) {
       if (err.status === 404) entries = []; else { log('목록 불러오기 실패: ' + err.message); return; }
     }
-    const keep = sel.value;
-    sel.innerHTML = '<option value="">새 글</option>' + entries.map((e) => `<option value="${escapeHtml(e.name)}">${escapeHtml(e.name)}</option>`).join('');
-    sel.value = entries.some((e) => e.name === keep) ? keep : '';
+    note.hidden = entries.length > 0;
+    if (entries.length === 0) note.textContent = '아직 글이 없습니다. 아래에서 새 글을 쓰세요.';
     if (!current) $('ed-order').value = entries.length + 1;
+    renderEntries();
     log(`기존 글 ${entries.length}개`);
+    // fill in titles/order from each file (a few small requests)
+    await Promise.all(entries.map(async (e) => {
+      try {
+        const data = await gh('GET', `${repoPath}/contents/${ENTRY_DIR}/${e.name}?ref=${REPO.branch}`);
+        const fm = parseEntry(b64ToUtf8(data.content)).fm;
+        e.title = fm.title_en || ''; e.order = fm.order || '';
+      } catch (err) { /* keep the file name only */ }
+    }));
+    entries.sort((a, b) => (parseInt(b.order, 10) || 0) - (parseInt(a.order, 10) || 0));
+    renderEntries();
+  }
+  function renderEntries() {
+    const ul = $('ed-entry-list');
+    ul.innerHTML = '';
+    entries.forEach((e) => {
+      const li = document.createElement('li');
+      if (current && current.name === e.name) li.className = 'inserted';
+      const name = document.createElement('span');
+      name.className = 'name';
+      name.textContent = (e.title ? `${e.title} (${e.name})` : e.name) + (e.order ? ` · order ${e.order}` : '');
+      const btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'adm-btn small'; btn.textContent = '수정';
+      btn.addEventListener('click', () => loadEntry(e.name));
+      li.append(name, btn);
+      ul.append(li);
+    });
   }
   $('ed-reload').addEventListener('click', refreshList);
 
@@ -289,19 +314,20 @@ noindex: true
     $('ed-thumb').value = ''; $('ed-files').value = '';
     $('ed-thumb-preview').src = DEFAULT_THUMB;
     $('ed-delete').hidden = true; $('ed-preview').hidden = true;
-    $('ed-existing').value = '';
+    $('ed-mode').textContent = '새 글';
     renderFiles();
+    renderEntries();
   }
-  $('ed-new').addEventListener('click', resetForm);
-  $('ed-existing').addEventListener('change', async (e) => {
-    const name = e.target.value;
-    if (!name) { resetForm(); return; }
+  $('ed-new').addEventListener('click', () => { resetForm(); $('ed-title-en').focus(); });
+  async function loadEntry(name) {
     try {
       const data = await gh('GET', `${repoPath}/contents/${ENTRY_DIR}/${name}?ref=${REPO.branch}`);
       const p = parseEntry(b64ToUtf8(data.content));
       resetForm();
       current = { name };
-      $('ed-existing').value = name;
+      $('ed-mode').textContent = '수정 중: ' + name;
+      renderEntries();
+      $('ed-mode').scrollIntoView({ behavior: 'smooth', block: 'start' });
       $('ed-slug').value = name.replace(/\.md$/, ''); lastSlug = $('ed-slug').value; $('ed-slug').readOnly = true;
       $('ed-title-en').value = p.fm.title_en || ''; $('ed-title-ko').value = p.fm.title_ko || '';
       $('ed-desc-en').value = p.fm.desc_en || ''; $('ed-desc-ko').value = p.fm.desc_ko || '';
@@ -312,7 +338,7 @@ noindex: true
       $('ed-delete').hidden = false;
       log(`불러옴: ${name}` + (p.legacy ? ' (언어 블록이 없어 본문 전체를 EN에 넣었습니다)' : ''));
     } catch (err) { log('불러오기 실패: ' + err.message); }
-  });
+  }
   $('ed-title-en').addEventListener('input', () => { if (!current && !$('ed-slug').dataset.touched) setSlug(slugify($('ed-title-en').value)); });
   $('ed-slug').addEventListener('input', () => { $('ed-slug').dataset.touched = '1'; setSlug($('ed-slug').value.trim()); });
 
@@ -453,9 +479,9 @@ noindex: true
       log(`완료: ${commit.html_url || commit.sha}\n1~2분 뒤 사이트에 반영됩니다.`);
       attachments = []; thumbBlob = null; thumbPath = f.thumb; renderFiles();
       current = { name: f.slug + '.md' };
+      $('ed-mode').textContent = '수정 중: ' + current.name;
       $('ed-slug').readOnly = true; $('ed-delete').hidden = false;
       await refreshList();
-      $('ed-existing').value = f.slug + '.md';
     } catch (err) { log('실패: ' + err.message); }
     btn.disabled = false;
   });
