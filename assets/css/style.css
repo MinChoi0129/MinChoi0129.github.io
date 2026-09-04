@@ -786,8 +786,239 @@ code {
     width: 76px;
     height: 76px;
   }
+}
+/* ---- Projects: admin (write) button ---- */
+.p-admin {
+  text-align: right;
+  margin: -6px 0 10px;
+}
 
-  .pdf-frame iframe {
-    height: 72vh;
+.btn-admin {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn-admin:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+/* ---- Admin page (/admin.html) ---- */
+.admin [hidden] {
+  display: none !important;
+}
+
+.adm-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  padding: 22px 24px;
+  margin: 0 0 18px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.adm-card h1,
+.adm-card h2 {
+  margin-top: 0;
+}
+
+.adm-muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.adm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 16px;
+}
+
+.adm-grid .full {
+  grid-column: 1 / -1;
+}
+
+.admin label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.admin label.adm-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.admin input[type="text"],
+.admin input[type="password"],
+.admin input[type="number"],
+.admin select,
+.admin textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  background: var(--surface);
+  color: var(--fg);
+}
+
+.admin label.adm-inline select {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+}
+
+.admin input[type="file"] {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.admin textarea {
+  min-height: 180px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.55;
+  resize: vertical;
+}
+
+.adm-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.adm-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--fg);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.adm-btn.small {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.adm-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.adm-btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.adm-btn.danger {
+  color: #b91c1c;
+}
+
+.adm-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.adm-msg {
+  font-size: 14px;
+  margin: 8px 0 0;
+  color: #b91c1c;
+}
+
+.adm-msg.ok {
+  color: #15803d;
+}
+
+.adm-files {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.adm-files li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+}
+
+.adm-files li .name {
+  flex: 1;
+  min-width: 160px;
+  word-break: break-all;
+}
+
+.adm-files li.inserted .name::after {
+  content: " (본문에 삽입됨)";
+  color: var(--muted);
+}
+
+.adm-thumb {
+  width: 96px;
+  height: 96px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  display: block;
+  margin-top: 6px;
+}
+
+.adm-log {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  max-height: 220px;
+  overflow: auto;
+  margin: 12px 0 0;
+  color: #374151;
+}
+
+.adm-preview {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-top: 10px;
+  background: var(--surface);
+}
+
+.adm-preview img,
+.adm-preview video {
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 12px 0;
+}
+
+@media (max-width: 600px) {
+  .adm-grid {
+    grid-template-columns: 1fr;
   }
 }

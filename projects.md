@@ -4,10 +4,14 @@ title: Projects
 ---
 <!--
   HOW TO ADD A PROJECT
-  1) Create _projects/<name>.md  (front matter: title_en, title_ko, desc_en,
-     desc_ko, thumb, order) + a markdown body (text, images, videos).
-  2) Drop a SQUARE thumbnail at assets/img/projects/<name>.png
-  The list renders every _projects/*.md automatically.
+  Easiest: open /admin.html (the "Write" button below), sign in, and publish.
+  It commits _projects/<slug>.md plus media under assets/projects/<slug>/
+  straight to the repo; GitHub Pages rebuilds in a minute or two.
+  By hand: create _projects/<slug>.md (front matter: title_en, title_ko,
+  desc_en, desc_ko, thumb, order) with a markdown body wrapped in paired
+  <div class="lang-en" markdown="1"> / <div class="lang-ko" markdown="1">
+  blocks, and drop a SQUARE thumbnail at assets/projects/<slug>/thumb.jpg.
+  The list renders every _projects/*.md automatically, sorted by order.
 
   UX: collapsed = a vertical list of cards. Open one and the list shrinks to a
   left sidebar (Finder-style) while the chosen project's body fills the detail
@@ -19,6 +23,8 @@ title: Projects
 <h1><span class="lang-en">Projects</span><span class="lang-ko">프로젝트</span></h1>
 
 </div>
+
+<p class="p-admin"><a class="btn-admin" href="{{ '/admin.html' | relative_url }}"><span class="lang-en">Write</span><span class="lang-ko">글쓰기</span></a></p>
 
 {% if site.projects_maintenance %}
 <div class="maintenance">

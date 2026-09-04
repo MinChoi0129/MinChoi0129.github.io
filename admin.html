@@ -1,0 +1,502 @@
+---
+layout: default
+title: Admin
+permalink: /admin.html
+noindex: true
+---
+<!--
+  Admin page: write, edit, or remove Projects entries from the browser.
+
+  How it works on a static site (there is no server):
+  - The id/password check runs client-side. The salted PBKDF2-SHA256 hash in
+    AUTH below is public, so it only gates the UI; treat it as a lock on the
+    door, not a vault.
+  - The real write credential is a GitHub fine-grained personal access token
+    (this repo only, Contents: Read and write) that the owner pastes in here.
+    It lives in this browser (sessionStorage, or localStorage with "remember")
+    and is never committed.
+  - Publishing makes one commit on main through the Git Data API:
+    _projects/<slug>.md plus media under assets/projects/<slug>/.
+    GitHub Pages rebuilds the site a minute or two later.
+
+  To change the password, run
+    python3 -c "import hashlib,os; s=os.urandom(16); print(s.hex(), bytes(hashlib.pbkdf2_hmac('sha256', b'NEW-PASSWORD', s, 600000)).hex())"
+  and paste the salt and hash into AUTH. userHash is sha256 of the id.
+-->
+
+<div class="admin">
+
+<section id="adm-login" class="adm-card">
+  <h1>관리자 확인</h1>
+  <p class="adm-muted">프로젝트 글을 쓰거나 고치려면 본인 확인이 필요합니다.</p>
+  <form id="login-form" class="adm-grid">
+    <label>아이디<input id="login-id" type="text" autocomplete="username" required></label>
+    <label>비밀번호<input id="login-pw" type="password" autocomplete="current-password" required></label>
+    <div class="full adm-row"><button id="login-btn" type="submit" class="adm-btn primary">확인</button><span id="login-msg" class="adm-msg"></span></div>
+  </form>
+</section>
+
+<section id="adm-token" class="adm-card" hidden>
+  <div class="adm-row" style="justify-content: space-between;"><h2 style="margin: 0;">GitHub 연결</h2><button id="adm-logout" type="button" class="adm-btn">로그아웃</button></div>
+  <p class="adm-muted">글을 올리면 이 브라우저에서 저장소 <code>MinChoi0129/MinChoi0129.github.io</code>의 main 브랜치로 바로 커밋합니다. GitHub에서 fine-grained personal access token을 만들어 붙여넣으세요. 저장소는 이 하나만 고르고, 권한은 Contents: Read and write만 주면 됩니다. 토큰은 이 브라우저에만 저장되고 사이트 코드에는 들어가지 않습니다.</p>
+  <div class="adm-row">
+    <input id="gh-token" type="password" placeholder="github_pat_..." style="flex: 1; min-width: 220px; margin: 0;" autocomplete="off">
+    <label class="adm-inline"><input type="checkbox" id="gh-remember"> 이 기기에 기억</label>
+    <button id="gh-save" type="button" class="adm-btn primary">저장</button>
+    <button id="gh-forget" type="button" class="adm-btn">지우기</button>
+  </div>
+  <p id="gh-status" class="adm-msg"></p>
+</section>
+
+<section id="adm-editor" class="adm-card" hidden>
+  <h2>프로젝트 글</h2>
+  <div class="adm-row">
+    <label class="adm-inline">불러오기 <select id="ed-existing"><option value="">새 글</option></select></label>
+    <button id="ed-reload" type="button" class="adm-btn">목록 새로고침</button>
+  </div>
+  <div class="adm-grid">
+    <label>제목 (EN)<input id="ed-title-en" type="text"></label>
+    <label>제목 (KO)<input id="ed-title-ko" type="text"></label>
+    <label>slug (파일과 폴더 이름, 영문 소문자)<input id="ed-slug" type="text" placeholder="예: swiftmos"></label>
+    <label>순서 (order, 작을수록 위)<input id="ed-order" type="number" min="1" step="1"></label>
+    <label>한 줄 소개 (EN)<input id="ed-desc-en" type="text"></label>
+    <label>한 줄 소개 (KO)<input id="ed-desc-ko" type="text"></label>
+    <label class="full">썸네일 (정사각형으로 잘라 512px JPEG로 저장합니다)<input id="ed-thumb" type="file" accept="image/*"><img id="ed-thumb-preview" class="adm-thumb" alt="" src="/assets/projects/default-thumb.jpg"></label>
+    <label class="full">본문 (EN, 마크다운)<textarea id="ed-body-en"></textarea></label>
+    <label class="full">본문 (KO, 마크다운)<textarea id="ed-body-ko"></textarea></label>
+    <label class="full">공용 영역 (두 언어 모두에 보이는 사진과 영상, 본문 아래에 붙습니다)<textarea id="ed-shared" style="min-height: 90px;"></textarea></label>
+    <div class="full">
+      <label>사진, 영상 첨부 (파일당 50MB까지)<input id="ed-files" type="file" accept="image/*,video/*" multiple></label>
+      <ul id="ed-file-list" class="adm-files"></ul>
+      <p id="ed-file-note" class="adm-muted" hidden>삽입 버튼을 누르면 커서 위치에 태그가 들어갑니다. 삽입하지 않은 파일은 아래 설정에 따라 공용 영역 끝에 자동으로 붙습니다.</p>
+      <label class="adm-inline"><input type="checkbox" id="ed-auto-append" checked> 삽입하지 않은 첨부는 공용 영역에 자동 추가</label>
+    </div>
+  </div>
+  <div class="adm-row">
+    <button id="ed-publish" type="button" class="adm-btn primary">저장소에 올리기</button>
+    <button id="ed-preview-btn" type="button" class="adm-btn">미리보기</button>
+    <button id="ed-new" type="button" class="adm-btn">새 글</button>
+    <button id="ed-delete" type="button" class="adm-btn danger" hidden>이 글 삭제</button>
+  </div>
+  <div id="ed-preview" class="adm-preview" hidden></div>
+  <pre id="ed-log" class="adm-log"></pre>
+</section>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+{% raw %}
+<script>
+(async function () {
+  'use strict';
+
+  const AUTH = {
+    userHash: '42008d6c0f0493c8b3841d7e7fda15195b5d591c47e5e6306e135d2c4eb429a7',
+    salt: 'df8ba599f31726c742252f8b1be32f2f',
+    iters: 600000,
+    pwHash: '718906e265edb998d9d3c1b772f2b86b21d2ebf9d663eaadf9354c3b91f4970b'
+  };
+  const REPO = { owner: 'MinChoi0129', repo: 'MinChoi0129.github.io', branch: 'main' };
+  const ENTRY_DIR = '_projects';
+  const MEDIA_DIR = 'assets/projects';
+  const DEFAULT_THUMB = '/assets/projects/default-thumb.jpg';
+  const MAX_FILE = 50 * 1024 * 1024;
+
+  const $ = (id) => document.getElementById(id);
+  const enc = new TextEncoder();
+  const hex = (buf) => Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, '0')).join('');
+  const unhex = (h) => new Uint8Array(h.match(/../g).map((x) => parseInt(x, 16)));
+  const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  async function sha256(s) { return hex(await crypto.subtle.digest('SHA-256', enc.encode(s))); }
+  async function pbkdf2(pw) {
+    const key = await crypto.subtle.importKey('raw', enc.encode(pw), 'PBKDF2', false, ['deriveBits']);
+    const bits = await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt: unhex(AUTH.salt), iterations: AUTH.iters }, key, 256);
+    return hex(bits);
+  }
+  function sameHex(a, b) {
+    if (a.length !== b.length) return false;
+    let d = 0;
+    for (let i = 0; i < a.length; i++) d |= a.charCodeAt(i) ^ b.charCodeAt(i);
+    return d === 0;
+  }
+
+  // ---- UI helpers ----
+  const views = { login: $('adm-login'), token: $('adm-token'), editor: $('adm-editor') };
+  function show(loggedIn) { views.login.hidden = loggedIn; views.token.hidden = !loggedIn; views.editor.hidden = !loggedIn; }
+  function msg(el, text, ok) { el.textContent = text || ''; el.classList.toggle('ok', !!ok); }
+  const logEl = $('ed-log');
+  function log(line) { logEl.textContent += line + '\n'; logEl.scrollTop = logEl.scrollHeight; }
+
+  if (!window.isSecureContext || !crypto.subtle) { msg($('login-msg'), '이 페이지는 https에서만 동작합니다.'); return; }
+
+  // ---- login ----
+  $('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = $('login-btn');
+    btn.disabled = true;
+    msg($('login-msg'), '확인 중...');
+    try {
+      const u = await sha256($('login-id').value.trim());
+      const p = await pbkdf2($('login-pw').value);
+      if (sameHex(u, AUTH.userHash) && sameHex(p, AUTH.pwHash)) {
+        sessionStorage.setItem('adm-ok', '1');
+        $('login-pw').value = '';
+        msg($('login-msg'), '');
+        show(true);
+        await afterLogin();
+      } else {
+        msg($('login-msg'), '아이디 또는 비밀번호가 맞지 않습니다.');
+      }
+    } catch (err) { msg($('login-msg'), '확인 중 오류: ' + err.message); }
+    btn.disabled = false;
+  });
+  $('adm-logout').addEventListener('click', () => { sessionStorage.removeItem('adm-ok'); show(false); });
+
+  // ---- GitHub token + API ----
+  function getToken() { return sessionStorage.getItem('gh-token') || localStorage.getItem('gh-token') || ''; }
+  function setToken(t, remember) {
+    sessionStorage.removeItem('gh-token');
+    localStorage.removeItem('gh-token');
+    if (t) (remember ? localStorage : sessionStorage).setItem('gh-token', t);
+  }
+  const repoPath = `/repos/${REPO.owner}/${REPO.repo}`;
+  async function gh(method, path, body) {
+    const t = getToken();
+    if (!t) throw new Error('GitHub 토큰이 없습니다.');
+    const headers = { Authorization: 'Bearer ' + t, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+    if (body) headers['Content-Type'] = 'application/json';
+    const r = await fetch('https://api.github.com' + path, { method, headers, body: body ? JSON.stringify(body) : undefined });
+    if (r.status === 204) return null;
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      const err = new Error(`${method} ${path} → ${r.status} ${data.message || ''}`);
+      err.status = r.status;
+      throw err;
+    }
+    return data;
+  }
+  async function checkToken() {
+    const st = $('gh-status');
+    if (!getToken()) { msg(st, '토큰이 설정되지 않았습니다.'); return false; }
+    try {
+      const me = await gh('GET', '/user');
+      await gh('GET', repoPath);
+      msg(st, '연결됨: ' + me.login, true);
+      return true;
+    } catch (err) { msg(st, '토큰 확인 실패: ' + err.message); return false; }
+  }
+  $('gh-save').addEventListener('click', async () => {
+    const t = $('gh-token').value.trim();
+    if (!t) return;
+    setToken(t, $('gh-remember').checked);
+    $('gh-token').value = '';
+    if (await checkToken()) await refreshList();
+  });
+  $('gh-forget').addEventListener('click', () => { setToken('', false); msg($('gh-status'), '토큰을 지웠습니다.'); });
+  async function afterLogin() { if (await checkToken()) await refreshList(); }
+
+  // ---- entry (de)serialization ----
+  const b64ToUtf8 = (b64) => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\n/g, '')), (c) => c.charCodeAt(0)));
+  function blobToB64(blob) {
+    return new Promise((res, rej) => {
+      const fr = new FileReader();
+      fr.onload = () => res(String(fr.result).split(',')[1]);
+      fr.onerror = () => rej(fr.error);
+      fr.readAsDataURL(blob);
+    });
+  }
+  const yq = (s) => '"' + String(s || '').replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\r?\n/g, ' ') + '"';
+  const yunq = (s) => {
+    s = s.trim();
+    if (/^".*"$/.test(s)) return s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+    if (/^'.*'$/.test(s)) return s.slice(1, -1).replace(/''/g, "'");
+    return s;
+  };
+  function parseEntry(text) {
+    const m = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+    const fm = {};
+    let body = text;
+    if (m) {
+      body = m[2];
+      m[1].split(/\r?\n/).forEach((line) => { const k = line.match(/^([\w-]+):\s*(.*)$/); if (k) fm[k[1]] = yunq(k[2]); });
+    }
+    const grab = (cls) => {
+      const r = new RegExp('<div class="lang-' + cls + '" markdown="1">\\s*([\\s\\S]*?)\\s*<\\/div>');
+      const x = body.match(r);
+      return x ? { text: x[1], raw: x[0] } : null;
+    };
+    const en = grab('en'), ko = grab('ko');
+    let shared = body;
+    if (en) shared = shared.replace(en.raw, '');
+    if (ko) shared = shared.replace(ko.raw, '');
+    return { fm, bodyEn: en ? en.text : (ko ? '' : body.trim()), bodyKo: ko ? ko.text : '', shared: shared.trim(), legacy: !en && !ko };
+  }
+  function buildEntry(f) {
+    const fm = ['---', 'title_en: ' + yq(f.titleEn), 'title_ko: ' + yq(f.titleKo || f.titleEn), 'desc_en: ' + yq(f.descEn), 'desc_ko: ' + yq(f.descKo || f.descEn), 'thumb: ' + f.thumb, 'order: ' + f.order, '---', ''];
+    const parts = [fm.join('\n'),
+      '<div class="lang-en" markdown="1">\n' + f.bodyEn.trim() + '\n</div>',
+      '<div class="lang-ko" markdown="1">\n' + (f.bodyKo.trim() || f.bodyEn.trim()) + '\n</div>'];
+    if (f.shared.trim()) parts.push(f.shared.trim());
+    return parts.join('\n') + '\n';
+  }
+  const slugify = (s) => s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
+  const safeName = (n) => {
+    const i = n.lastIndexOf('.');
+    const base = i > 0 ? n.slice(0, i) : n, ext = i > 0 ? n.slice(i) : '';
+    return (slugify(base) || 'file') + ext.toLowerCase().replace(/[^a-z0-9.]/g, '');
+  };
+
+  // ---- editor state ----
+  let entries = [];       // [{name, path}]
+  let current = null;     // {name} when editing an existing entry
+  let attachments = [];   // [{file, name, kind, inserted}]
+  let thumbBlob = null;   // new thumbnail (JPEG blob) or null
+  let thumbPath = '';     // existing thumbnail path when editing
+  let lastSlug = '';
+
+  async function refreshList() {
+    const sel = $('ed-existing');
+    try {
+      const list = await gh('GET', `${repoPath}/contents/${ENTRY_DIR}?ref=${REPO.branch}`);
+      entries = (Array.isArray(list) ? list : []).filter((x) => x.type === 'file' && /\.md$/.test(x.name));
+    } catch (err) {
+      if (err.status === 404) entries = []; else { log('목록 불러오기 실패: ' + err.message); return; }
+    }
+    const keep = sel.value;
+    sel.innerHTML = '<option value="">새 글</option>' + entries.map((e) => `<option value="${escapeHtml(e.name)}">${escapeHtml(e.name)}</option>`).join('');
+    sel.value = entries.some((e) => e.name === keep) ? keep : '';
+    if (!current) $('ed-order').value = entries.length + 1;
+    log(`기존 글 ${entries.length}개`);
+  }
+  $('ed-reload').addEventListener('click', refreshList);
+
+  function setSlug(v) {
+    const s = $('ed-slug');
+    if (lastSlug && v !== lastSlug) {
+      const from = `/${MEDIA_DIR}/${lastSlug}/`, to = `/${MEDIA_DIR}/${v}/`;
+      ['ed-body-en', 'ed-body-ko', 'ed-shared'].forEach((id) => { $(id).value = $(id).value.split(from).join(to); });
+    }
+    s.value = v;
+    lastSlug = v;
+  }
+  function resetForm() {
+    current = null; attachments = []; thumbBlob = null; thumbPath = ''; lastSlug = '';
+    ['ed-title-en', 'ed-title-ko', 'ed-slug', 'ed-desc-en', 'ed-desc-ko', 'ed-body-en', 'ed-body-ko', 'ed-shared'].forEach((id) => { $(id).value = ''; });
+    delete $('ed-slug').dataset.touched;
+    $('ed-slug').readOnly = false;
+    $('ed-order').value = entries.length + 1;
+    $('ed-thumb').value = ''; $('ed-files').value = '';
+    $('ed-thumb-preview').src = DEFAULT_THUMB;
+    $('ed-delete').hidden = true; $('ed-preview').hidden = true;
+    $('ed-existing').value = '';
+    renderFiles();
+  }
+  $('ed-new').addEventListener('click', resetForm);
+  $('ed-existing').addEventListener('change', async (e) => {
+    const name = e.target.value;
+    if (!name) { resetForm(); return; }
+    try {
+      const data = await gh('GET', `${repoPath}/contents/${ENTRY_DIR}/${name}?ref=${REPO.branch}`);
+      const p = parseEntry(b64ToUtf8(data.content));
+      resetForm();
+      current = { name };
+      $('ed-existing').value = name;
+      $('ed-slug').value = name.replace(/\.md$/, ''); lastSlug = $('ed-slug').value; $('ed-slug').readOnly = true;
+      $('ed-title-en').value = p.fm.title_en || ''; $('ed-title-ko').value = p.fm.title_ko || '';
+      $('ed-desc-en').value = p.fm.desc_en || ''; $('ed-desc-ko').value = p.fm.desc_ko || '';
+      $('ed-order').value = p.fm.order || '';
+      thumbPath = p.fm.thumb || '';
+      $('ed-thumb-preview').src = thumbPath || DEFAULT_THUMB;
+      $('ed-body-en').value = p.bodyEn; $('ed-body-ko').value = p.bodyKo; $('ed-shared').value = p.shared;
+      $('ed-delete').hidden = false;
+      log(`불러옴: ${name}` + (p.legacy ? ' (언어 블록이 없어 본문 전체를 EN에 넣었습니다)' : ''));
+    } catch (err) { log('불러오기 실패: ' + err.message); }
+  });
+  $('ed-title-en').addEventListener('input', () => { if (!current && !$('ed-slug').dataset.touched) setSlug(slugify($('ed-title-en').value)); });
+  $('ed-slug').addEventListener('input', () => { $('ed-slug').dataset.touched = '1'; setSlug($('ed-slug').value.trim()); });
+
+  // ---- thumbnail ----
+  function squareJpeg(file, size) {
+    return new Promise((res, rej) => {
+      const img = new Image();
+      const url = URL.createObjectURL(file);
+      img.onload = () => {
+        const s = Math.min(img.naturalWidth, img.naturalHeight);
+        const c = document.createElement('canvas');
+        c.width = c.height = size;
+        c.getContext('2d').drawImage(img, (img.naturalWidth - s) / 2, (img.naturalHeight - s) / 2, s, s, 0, 0, size, size);
+        URL.revokeObjectURL(url);
+        c.toBlob((b) => (b ? res(b) : rej(new Error('썸네일 변환 실패'))), 'image/jpeg', 0.9);
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); rej(new Error('이미지를 읽을 수 없습니다: ' + file.name)); };
+      img.src = url;
+    });
+  }
+  $('ed-thumb').addEventListener('change', async (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    try { thumbBlob = await squareJpeg(f, 512); $('ed-thumb-preview').src = URL.createObjectURL(thumbBlob); }
+    catch (err) { log(err.message); }
+  });
+
+  // ---- attachments ----
+  const mediaUrl = (name) => `/${MEDIA_DIR}/${$('ed-slug').value}/${name}`;
+  const snippet = (a) => (a.kind === 'video'
+    ? `<video class="project-video" controls preload="none" src="${mediaUrl(a.name)}"></video>`
+    : `![${a.name}](${mediaUrl(a.name)})`);
+  $('ed-files').addEventListener('change', (e) => {
+    for (const f of e.target.files) {
+      if (f.size > MAX_FILE) { log(`건너뜀 (50MB 초과): ${f.name}`); continue; }
+      const kind = f.type.startsWith('video/') ? 'video' : (f.type.startsWith('image/') ? 'image' : null);
+      if (!kind) { log(`건너뜀 (사진과 영상만 가능): ${f.name}`); continue; }
+      let name = safeName(f.name);
+      if (name === 'thumb.jpg') name = 'thumb-1.jpg';
+      while (attachments.some((a) => a.name === name)) name = name.replace(/(\.[^.]+)$/, '-1$1');
+      attachments.push({ file: f, name, kind, inserted: false });
+    }
+    e.target.value = '';
+    renderFiles();
+  });
+  function insertAt(ta, text) {
+    const s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s;
+    const before = ta.value.slice(0, s), after = ta.value.slice(e);
+    const pad = before && !before.endsWith('\n') ? '\n\n' : '';
+    const ins = pad + text + '\n\n';
+    ta.value = before + ins + after;
+    ta.focus();
+    ta.setSelectionRange((before + ins).length, (before + ins).length);
+  }
+  function renderFiles() {
+    const ul = $('ed-file-list');
+    ul.innerHTML = '';
+    attachments.forEach((a, i) => {
+      const li = document.createElement('li');
+      li.className = a.inserted ? 'inserted' : '';
+      const name = document.createElement('span');
+      name.className = 'name';
+      name.textContent = `[${a.kind === 'video' ? '영상' : '사진'}] ${a.name} (${(a.file.size / 1024 / 1024).toFixed(1)} MB)`;
+      li.append(name);
+      const mk = (label, fn) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'adm-btn small'; b.textContent = label; b.addEventListener('click', fn); return b; };
+      const put = (id) => () => { insertAt($(id), snippet(a)); a.inserted = true; renderFiles(); };
+      li.append(mk('EN에 삽입', put('ed-body-en')), mk('KO에 삽입', put('ed-body-ko')), mk('공용에 삽입', put('ed-shared')),
+        mk('제거', () => { attachments.splice(i, 1); renderFiles(); }));
+      ul.append(li);
+    });
+    $('ed-file-note').hidden = attachments.length === 0;
+  }
+
+  // ---- publish / delete ----
+  function collect() {
+    const slug = $('ed-slug').value.trim();
+    if (!slug || !/^[a-z0-9-]+$/.test(slug)) throw new Error('slug는 영문 소문자, 숫자, 하이픈만 쓸 수 있습니다.');
+    if (!$('ed-title-en').value.trim()) throw new Error('영문 제목을 입력하세요.');
+    const order = parseInt($('ed-order').value, 10);
+    if (!Number.isFinite(order)) throw new Error('순서(order)는 숫자여야 합니다.');
+    let shared = $('ed-shared').value;
+    if ($('ed-auto-append').checked) {
+      const extra = attachments.filter((a) => !a.inserted).map(snippet).join('\n\n');
+      if (extra) shared = (shared.trim() ? shared.trim() + '\n\n' : '') + extra;
+    }
+    return {
+      slug, order,
+      titleEn: $('ed-title-en').value.trim(), titleKo: $('ed-title-ko').value.trim(),
+      descEn: $('ed-desc-en').value.trim(), descKo: $('ed-desc-ko').value.trim(),
+      bodyEn: $('ed-body-en').value, bodyKo: $('ed-body-ko').value, shared
+    };
+  }
+  // One commit on main: upload blobs, build a tree on top of HEAD, commit, move the ref.
+  async function commitTree(message, changes) {
+    const ref = await gh('GET', `${repoPath}/git/ref/heads/${REPO.branch}`);
+    const head = ref.object.sha;
+    const base = await gh('GET', `${repoPath}/git/commits/${head}`);
+    const tree = [];
+    for (const c of changes) {
+      if (c.delete) { tree.push({ path: c.path, mode: '100644', type: 'blob', sha: null }); continue; }
+      log(`업로드: ${c.path}`);
+      const blob = await gh('POST', `${repoPath}/git/blobs`, { content: c.b64, encoding: 'base64' });
+      tree.push({ path: c.path, mode: '100644', type: 'blob', sha: blob.sha });
+    }
+    const newTree = await gh('POST', `${repoPath}/git/trees`, { base_tree: base.tree.sha, tree });
+    const commit = await gh('POST', `${repoPath}/git/commits`, { message, tree: newTree.sha, parents: [head] });
+    await gh('PATCH', `${repoPath}/git/refs/heads/${REPO.branch}`, { sha: commit.sha });
+    return commit;
+  }
+  $('ed-publish').addEventListener('click', async () => {
+    const btn = $('ed-publish');
+    btn.disabled = true;
+    try {
+      const f = collect();
+      const dir = `${MEDIA_DIR}/${f.slug}`;
+      const changes = [];
+      if (thumbBlob) {
+        f.thumb = `/${dir}/thumb.jpg`;
+        changes.push({ path: `${dir}/thumb.jpg`, b64: await blobToB64(thumbBlob) });
+      } else if (thumbPath) {
+        f.thumb = thumbPath;
+      } else {
+        const img = attachments.find((a) => a.kind === 'image');
+        if (img) {
+          f.thumb = `/${dir}/thumb.jpg`;
+          changes.push({ path: `${dir}/thumb.jpg`, b64: await blobToB64(await squareJpeg(img.file, 512)) });
+          log('썸네일: 첫 번째 사진으로 만들었습니다.');
+        } else {
+          f.thumb = DEFAULT_THUMB;
+          log('썸네일: 기본 이미지를 씁니다.');
+        }
+      }
+      for (const a of attachments) changes.push({ path: `${dir}/${a.name}`, b64: await blobToB64(a.file) });
+      const md = buildEntry(f);
+      changes.push({ path: `${ENTRY_DIR}/${f.slug}.md`, b64: await blobToB64(new Blob([md], { type: 'text/markdown' })) });
+      const isNew = !current;
+      const commit = await commitTree(`Projects: ${isNew ? 'add' : 'update'} ${f.slug}`, changes);
+      log(`완료: ${commit.html_url || commit.sha}\n1~2분 뒤 사이트에 반영됩니다.`);
+      attachments = []; thumbBlob = null; thumbPath = f.thumb; renderFiles();
+      current = { name: f.slug + '.md' };
+      $('ed-slug').readOnly = true; $('ed-delete').hidden = false;
+      await refreshList();
+      $('ed-existing').value = f.slug + '.md';
+    } catch (err) { log('실패: ' + err.message); }
+    btn.disabled = false;
+  });
+  $('ed-delete').addEventListener('click', async () => {
+    if (!current) return;
+    const slug = current.name.replace(/\.md$/, '');
+    if (!confirm(`'${slug}' 글과 첨부 파일을 저장소에서 삭제할까요?`)) return;
+    try {
+      const changes = [{ path: `${ENTRY_DIR}/${current.name}`, delete: true }];
+      try {
+        const files = await gh('GET', `${repoPath}/contents/${MEDIA_DIR}/${slug}?ref=${REPO.branch}`);
+        (Array.isArray(files) ? files : []).filter((x) => x.type === 'file').forEach((x) => changes.push({ path: x.path, delete: true }));
+      } catch (err) { if (err.status !== 404) throw err; }
+      const commit = await commitTree(`Projects: remove ${slug}`, changes);
+      log(`삭제 완료: ${commit.html_url || commit.sha}`);
+      resetForm();
+      await refreshList();
+    } catch (err) { log('삭제 실패: ' + err.message); }
+  });
+
+  // ---- preview ----
+  $('ed-preview-btn').addEventListener('click', () => {
+    const pv = $('ed-preview');
+    pv.hidden = !pv.hidden;
+    if (pv.hidden) return;
+    let f;
+    try { f = collect(); } catch (err) { pv.innerHTML = '<p class="adm-msg">' + escapeHtml(err.message) + '</p>'; return; }
+    const urlMap = {};
+    attachments.forEach((a) => { urlMap[mediaUrl(a.name)] = URL.createObjectURL(a.file); });
+    const render = (md) => {
+      let html = window.marked ? marked.parse(md) : '<pre>' + escapeHtml(md) + '</pre>';
+      Object.keys(urlMap).forEach((p) => { html = html.split(p).join(urlMap[p]); });
+      return html;
+    };
+    pv.innerHTML = '<h3>EN</h3>' + render(f.bodyEn) + '<h3>KO</h3>' + render(f.bodyKo || f.bodyEn) + (f.shared ? '<h3>공용</h3>' + render(f.shared) : '');
+  });
+
+  // ---- init ----
+  const loggedIn = sessionStorage.getItem('adm-ok') === '1';
+  show(loggedIn);
+  if (loggedIn) await afterLogin();
+})();
+</script>
+{% endraw %}
