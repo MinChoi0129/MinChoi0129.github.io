@@ -17,6 +17,12 @@ title: Publications
 
 ---
 
+## <span class="lang-en">Under Review / Revision</span><span class="lang-ko">심사·수정 중</span>
+
+<div class="under-review" markdown="1">
+
+</div>
+
 ## <span class="lang-en">International Journals</span><span class="lang-ko">국제 저널</span>
 
 - **Minjae Lee**, et al. LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation via Logarithmic Spatial Representation and Range-Balanced Learning. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
