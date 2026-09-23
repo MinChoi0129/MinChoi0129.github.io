@@ -11,22 +11,15 @@ title: Publications
 
 <h1><span class="lang-en">Publications</span><span class="lang-ko">논문</span></h1>
 
-<p><span class="lang-en">First author: 9 · Co-author: 9</span><span class="lang-ko">주저자 9편 · 공저자 9편</span></p>
+<p><span class="lang-en">First author: 10 · Co-author: 9</span><span class="lang-ko">주저자 10편 · 공저자 9편</span></p>
 
 </div>
 
 ---
 
-## <span class="lang-en">Under Review / Revision</span><span class="lang-ko">심사·수정 중</span>
-
-<div class="under-review" markdown="1">
-
-- **Minjae Lee**, et al. LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation via Logarithmic Spatial Representation and Range-Balanced Learning. *IEEE RA-L, <span class="rev"><span class="lang-en">under final review</span><span class="lang-ko">최종 심사 중</span></span>*, 2026.
-
-</div>
-
 ## <span class="lang-en">International Journals</span><span class="lang-ko">국제 저널</span>
 
+- **Minjae Lee**, et al. LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation via Logarithmic Spatial Representation and Range-Balanced Learning. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
 - **Minjae Lee**, U. Kim, G. W. Kim, and S. Lee. SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
 - **Minjae Lee**, S. Lee, and H. Seo. Enhancing Early Alzheimer's Disease Detection via Transfer Learning: From Big Structural MRI Datasets to Ethnically Distinct Small Cohorts. *Applied Sciences*, 16(2), 1004, 2026.
 - S. Yeon, **Minjae Lee**, J. Bae, and S. Lee. Resolving Ambiguity in Pointing Gestures Using Contextual Reasoning from Large Language Models. *Computer Modeling in Engineering &amp; Sciences (CMES)*, 2026.
