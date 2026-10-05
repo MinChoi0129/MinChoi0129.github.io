@@ -108,6 +108,14 @@
   }
 }
 
+\newcommand{\resumeProjectItem}[1]{
+  \item\footnotesize{
+    \begin{tabular*}{0.93\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}\vspace{-2pt}
+  }
+}
+
 \newcommand{\resumeCommunity}[3]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -188,13 +196,19 @@
 %-----------Projects-----------------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSkills{{\footnotesize LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation (IEEE RA-L)} & Feb. 2026 -- Sep. 2026}
-\resumeSkills{X-MOS: Cross-LiDAR Generalization Framework (ICRA 2026) & Aug. 2025 -- Jan. 2026}
-\resumeSkills{SwiftMOS: Real-Time LiDAR Moving Object Segmentation (IEEE RA-L) & Jan. 2025 -- Jan. 2026}
-\resumeSkills{Finger-Pointing-based Small Robot Control (SIGGRAPH Asia 2024) & Mar. 2024 -- Dec. 2024}
-\resumeSkills{{\footnotesize Shrunken Reality: SLAM-based Real-Time Real-World Context Augmentation (SIGGRAPH Asia)} & Jan. 2024 -- Dec. 2024}
-\resumeSkills{SLAM-based Illegal Parking Detection System (SIGGRAPH Asia 2024) & Aug. 2023 -- Dec. 2024}
-\resumeSkills{Low-Cost Augmented Reality Interaction (ETRI) & Jan. 2023 -- Dec. 2023}
+\resumeSkills{\textbf{LiDAR-Based Autonomous Driving Perception}}
+\resumeItemListStart
+\resumeProjectItem{LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation (IEEE RA-L) & Feb. 2026 -- Sep. 2026}
+\resumeProjectItem{X-MOS: Cross-LiDAR Generalization Framework (ICRA 2026) & Aug. 2025 -- Jan. 2026}
+\resumeProjectItem{SwiftMOS: Real-Time LiDAR Moving Object Segmentation (IEEE RA-L) & Jan. 2025 -- Jan. 2026}
+\resumeItemListEnd
+\resumeSkills{\textbf{Camera-Based Computer Vision Applications}}
+\resumeItemListStart
+\resumeProjectItem{Finger-Pointing-based Small Robot Control (SIGGRAPH Asia 2024) & Mar. 2024 -- Dec. 2024}
+\resumeProjectItem{Shrunken Reality: SLAM-based Real-Time Real-World Context Augmentation (SIGGRAPH Asia) & Jan. 2024 -- Dec. 2024}
+\resumeProjectItem{SLAM-based Illegal Parking Detection System (SIGGRAPH Asia 2024) & Aug. 2023 -- Dec. 2024}
+\resumeProjectItem{Low-Cost Augmented Reality Interaction (ETRI) & Jan. 2023 -- Dec. 2023}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------Honors & Awards-----------------

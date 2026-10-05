@@ -108,6 +108,14 @@
   }
 }
 
+\newcommand{\resumeProjectItem}[1]{
+  \item\footnotesize{
+    \begin{tabular*}{0.93\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}\vspace{-2pt}
+  }
+}
+
 \newcommand{\resumeCommunity}[3]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -188,13 +196,19 @@
 %-----------Projects-----------------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSkills{LoRa-MOS: 밀도 감쇠에 강건한 LiDAR 동적 객체 분할 (IEEE RA-L) & Feb. 2026 -- Sep. 2026}
-\resumeSkills{X-MOS: 이종 LiDAR 센서 간 일반화 프레임워크 (ICRA 2026) & Aug. 2025 -- Jan. 2026}
-\resumeSkills{SwiftMOS: LiDAR 기반 실시간 동적 객체 분할 (IEEE RA-L) & Jan. 2025 -- Jan. 2026}
-\resumeSkills{손가락 지시 기반 소형 로봇 조작 (SIGGRAPH Asia 2024) & Mar. 2024 -- Dec. 2024}
-\resumeSkills{{\footnotesize Shrunken Reality: SLAM 기반 실시간 현실세계 Context 증강 (SIGGRAPH Asia)} & Jan. 2024 -- Dec. 2024}
-\resumeSkills{SLAM 기반 불법 주정차 탐지 시스템 (SIGGRAPH Asia 2024) & Aug. 2023 -- Dec. 2024}
-\resumeSkills{저비용 증강현실 인터랙션 (한국전자통신연구원, ETRI) & Jan. 2023 -- Dec. 2023}
+\resumeSkills{\textbf{LiDAR 기반 자율주행 인지}}
+\resumeItemListStart
+\resumeProjectItem{LoRa-MOS: 밀도 감쇠에 강건한 LiDAR 동적 객체 분할 (IEEE RA-L) & Feb. 2026 -- Sep. 2026}
+\resumeProjectItem{X-MOS: 이종 LiDAR 센서 간 일반화 프레임워크 (ICRA 2026) & Aug. 2025 -- Jan. 2026}
+\resumeProjectItem{SwiftMOS: LiDAR 기반 실시간 동적 객체 분할 (IEEE RA-L) & Jan. 2025 -- Jan. 2026}
+\resumeItemListEnd
+\resumeSkills{\textbf{카메라 기반 컴퓨터 비전 응용}}
+\resumeItemListStart
+\resumeProjectItem{손가락 지시 기반 소형 로봇 조작 (SIGGRAPH Asia 2024) & Mar. 2024 -- Dec. 2024}
+\resumeProjectItem{Shrunken Reality: SLAM 기반 실시간 현실세계 Context 증강 (SIGGRAPH Asia) & Jan. 2024 -- Dec. 2024}
+\resumeProjectItem{SLAM 기반 불법 주정차 탐지 시스템 (SIGGRAPH Asia 2024) & Aug. 2023 -- Dec. 2024}
+\resumeProjectItem{저비용 증강현실 인터랙션 (한국전자통신연구원, ETRI) & Jan. 2023 -- Dec. 2023}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------Honors & Awards-----------------
