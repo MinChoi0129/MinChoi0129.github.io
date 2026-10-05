@@ -712,6 +712,15 @@ code {
   }
 }
 
+/* ---- News list: line the emoji up in one column ---- */
+/* The YYYY.MM dates render at slightly different widths, which pushed each
+   emoji to its own x. Reserving a fixed box for the date fixes the column. */
+.news li > strong:first-child {
+  display: inline-block;
+  min-width: 4.6em;
+  font-variant-numeric: tabular-nums;
+}
+
 /* ---- Collapsible older news ---- */
 .news-more {
   margin-top: 6px;

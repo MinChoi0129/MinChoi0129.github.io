@@ -42,7 +42,7 @@ My ultimate goal is to make computers understand space and time. That is what dr
 
 ## <span class="lang-en">News</span><span class="lang-ko">소식</span>
 
-<div class="lang-en" markdown="1">
+<div class="lang-en news" markdown="1">
 - **2026.09** &nbsp;📝&nbsp; One paper accepted to **IEEE Robotics and Automation Letters (RA-L)**.
 - **2026.08** &nbsp;🎓&nbsp; M.S. in Computer Science and Engineering, Gyeongsang National University.
 - **2026.08** &nbsp;💼&nbsp; Joined the **ETRI Visual Intelligence Lab** as a Post-Graduate Researcher.
@@ -69,7 +69,7 @@ My ultimate goal is to make computers understand space and time. That is what dr
 
 </details>
 </div>
-<div class="lang-ko" markdown="1">
+<div class="lang-ko news" markdown="1">
 - **2026.09** &nbsp;📝&nbsp; <strong>IEEE Robotics and Automation Letters (RA-L)</strong>에 논문 1편 게재 확정.
 - **2026.08** &nbsp;🎓&nbsp; 경상국립대학교 컴퓨터공학부 석사 졸업.
 - **2026.08** &nbsp;💼&nbsp; <strong>ETRI 시각지능연구실</strong>에 석사후연수연구원으로 합류.
