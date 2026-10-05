@@ -30,7 +30,7 @@ title: Projects
 {% if site.projects_maintenance %}
 <div class="maintenance">
 <p class="maintenance-title"><span class="lang-en">Under maintenance</span><span class="lang-ko">유지보수 중</span></p>
-<p class="maintenance-sub"><span class="lang-en">This page is being updated. Please check back soon.</span><span class="lang-ko">현재 페이지를 정리하고 있습니다. 곧 다시 찾아주세요.</span></p>
+<p class="maintenance-sub"><span class="lang-en">This page is being updated.</span><span class="lang-ko">현재 페이지를 정리하고 있습니다.</span></p>
 </div>
 {% else %}
 <div class="projects">
