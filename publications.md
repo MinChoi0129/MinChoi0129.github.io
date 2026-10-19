@@ -11,7 +11,7 @@ title: Publications
 
 <h1><span class="lang-en">Publications</span><span class="lang-ko">논문</span></h1>
 
-<p><span class="lang-en">First author: 10 · Co-author: 9</span><span class="lang-ko">주저자 10편 · 공저자 9편</span></p>
+<p><span class="lang-en">First author: 10 · Co-author: 11</span><span class="lang-ko">주저자 10편 · 공저자 11편</span></p>
 
 </div>
 
@@ -29,6 +29,8 @@ title: Publications
 - **Minjae Lee**, U. Kim, G. W. Kim, and S. Lee. SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
 - **Minjae Lee**, S. Lee, and H. Seo. Enhancing Early Alzheimer's Disease Detection via Transfer Learning: From Big Structural MRI Datasets to Ethnically Distinct Small Cohorts. *Applied Sciences*, 16(2), 1004, 2026.
 - S. Yeon, **Minjae Lee**, J. Bae, and S. Lee. Resolving Ambiguity in Pointing Gestures Using Contextual Reasoning from Large Language Models. *Computer Modeling in Engineering &amp; Sciences (CMES)*, 2026.
+- J. Bae, **Minjae Lee**, S. J. Buu, S. M. Choi, and S. Lee. Enhancing Monocular 3D Semantic Scene Graph Prediction via Cross-Modality Knowledge Distillation. *Pattern Recognition*, 2026.
+- S. Park, **Minjae Lee**, U. Kim, J. Bae, and S. Lee. Early Detection of Failure Onset in 3D Printing: A Foundation-Segmentation Pipeline. *Engineering Applications of Artificial Intelligence (EAAI)*, 2026.
 
 ## <span class="lang-en">International Conferences</span><span class="lang-ko">국제 학회</span>
 
