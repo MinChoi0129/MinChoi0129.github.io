@@ -26,11 +26,11 @@ title: Publications
 ## <span class="lang-en">International Journals</span><span class="lang-ko">국제 저널</span>
 
 - **Minjae Lee**, et al. LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation via Logarithmic Spatial Representation and Range-Balanced Learning. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
+- J. Bae, **Minjae Lee**, S. J. Buu, S. M. Choi, and S. Lee. Enhancing Monocular 3D Semantic Scene Graph Prediction via Cross-Modality Knowledge Distillation. *Pattern Recognition*, 2026.
+- S. Park, **Minjae Lee**, U. Kim, J. Bae, and S. Lee. Early Detection of Failure Onset in 3D Printing: A Foundation-Segmentation Pipeline. *Engineering Applications of Artificial Intelligence (EAAI)*, 2026.
 - **Minjae Lee**, U. Kim, G. W. Kim, and S. Lee. SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
 - **Minjae Lee**, S. Lee, and H. Seo. Enhancing Early Alzheimer's Disease Detection via Transfer Learning: From Big Structural MRI Datasets to Ethnically Distinct Small Cohorts. *Applied Sciences*, 16(2), 1004, 2026.
 - S. Yeon, **Minjae Lee**, J. Bae, and S. Lee. Resolving Ambiguity in Pointing Gestures Using Contextual Reasoning from Large Language Models. *Computer Modeling in Engineering &amp; Sciences (CMES)*, 2026.
-- J. Bae, **Minjae Lee**, S. J. Buu, S. M. Choi, and S. Lee. Enhancing Monocular 3D Semantic Scene Graph Prediction via Cross-Modality Knowledge Distillation. *Pattern Recognition*, 2026.
-- S. Park, **Minjae Lee**, U. Kim, J. Bae, and S. Lee. Early Detection of Failure Onset in 3D Printing: A Foundation-Segmentation Pipeline. *Engineering Applications of Artificial Intelligence (EAAI)*, 2026.
 
 ## <span class="lang-en">International Conferences</span><span class="lang-ko">국제 학회</span>
 
