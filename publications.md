@@ -11,7 +11,7 @@ title: Publications
 
 <h1><span class="lang-en">Publications</span><span class="lang-ko">논문</span></h1>
 
-<p><span class="lang-en">First author: 10 · Co-author: 11</span><span class="lang-ko">주저자 10편 · 공저자 11편</span></p>
+<p><span class="lang-en">First author: 10 · Co-author: 12</span><span class="lang-ko">주저자 10편 · 공저자 12편</span></p>
 
 </div>
 
@@ -26,6 +26,7 @@ title: Publications
 ## <span class="lang-en">International Journals</span><span class="lang-ko">국제 저널</span>
 
 - **Minjae Lee**, et al. LoRa-MOS: Density-Decay-Robust LiDAR Moving Object Segmentation via Logarithmic Spatial Representation and Range-Balanced Learning. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
+- U. Kim, **Minjae Lee**, and S. Lee. TT-FSI: Scalable Faithful Shapley Interactions via Tensor-Train. *IEEE Access*, 2026.
 - J. Bae, **Minjae Lee**, S. J. Buu, S. M. Choi, and S. Lee. Enhancing Monocular 3D Semantic Scene Graph Prediction via Cross-Modality Knowledge Distillation. *Pattern Recognition*, 2026.
 - S. Park, **Minjae Lee**, U. Kim, J. Bae, and S. Lee. Early Detection of Failure Onset in 3D Printing: A Foundation-Segmentation Pipeline. *Engineering Applications of Artificial Intelligence (EAAI)*, 2026.
 - **Minjae Lee**, U. Kim, G. W. Kim, and S. Lee. SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation. *IEEE Robotics and Automation Letters (RA-L)*, 2026.
