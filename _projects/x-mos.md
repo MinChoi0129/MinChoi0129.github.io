@@ -13,7 +13,7 @@ order: 3
 Details, figures, and a demo video will be added here.
 </div>
 <div class="lang-ko" markdown="1">
-**X-MOS: 이종 LiDAR 간 일반화를 위한 이동 객체 분할 프레임워크.** 이민재, 하일환, 최상민, 김광원, 이수원. *IEEE International Conference on Robotics and Automation (ICRA)*, 2026.
+**X-MOS: 이종 LiDAR 간 일반화를 위한 이동 객체 분할 프레임워크.** 이민재, 하일환, 최상민, 김건우, 이수원. *IEEE International Conference on Robotics and Automation (ICRA)*, 2026.
 
 상세 설명과 그림, 시연 영상은 곧 추가합니다.
 </div>
