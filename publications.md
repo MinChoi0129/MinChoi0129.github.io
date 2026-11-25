@@ -55,7 +55,7 @@ title: Publications
 - **Minjae Lee**, I. Ha, S. M. Choi, G. W. Kim, and S. Lee. X-MOS: A Heterogeneous Cross-LiDAR Generalization Framework for Moving Object Segmentation. *IEEE Int. Conf. on Robotics and Automation (ICRA)*, 2026.
 - **Minjae Lee**, S. M. Choi, G. W. Kim, and S. Lee. HBRB-BoW: A Retrained Bag-of-Words Vocabulary for ORB-SLAM via Hierarchical BRB-KMeans. *ICRA 2026 (Late-Breaking Results)*.
 - W. Kang, M. Kim, **Minjae Lee**, U. Kim, J. Bae, S. Lee, G. W. Kim, and S. M. Choi. Hierarchical Interests Modeling on Multiple Time Scales for Sequential Recommendation. *Workshop on AI with Biased or Scarce Data, AAAI 2026*.
-- U. Kim, **Minjae Lee**, J. Bae, M. Kim, S. M. Choi, and S. Lee. Privacy-Preserving Argumentative Explanations. *AAAI 2026*.
+- U. Kim, **Minjae Lee**, J. Bae, M. Kim, S. M. Choi, and S. Lee. Privacy-Preserving Argumentative Explanations. *AAAI 2026 (Student Abstract)*.
 - **Minjae Lee**, J. Bae, U. Kim, S. M. Choi, and S. Lee. Shrunken Reality: Augmenting Real-World Contexts in Real-Time on Realistic Miniature Dioramas. *SIGGRAPH Asia 2024*.
 - J. Bae, **Minjae Lee**, U. Kim, and S. Lee. SLAM-Based Illegal Parking Detection System. *SIGGRAPH Asia 2024*.
 - **Minjae Lee**, J. Bae, S. M. Choi, and S. Lee. Finger-Pointing Interface for Human Gesture Recognition Based on Real-Time Geometric Comprehension. *SIGGRAPH Asia 2024*.
